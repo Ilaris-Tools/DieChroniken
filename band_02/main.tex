@@ -1,0 +1,101 @@
+\documentclass[openright]{Ilaris}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{fourier}
+\usepackage{geometry}
+
+
+\setdescription{itemsep=0cm} %\baselineskip
+\setenumerate{itemsep=0cm} %\baselineskip
+
+\graphicspath{
+	%Bilder liegen in Unterordnern. Hier Windows-Codiert. Für bessere Betriebssysteme \ mit / ersetzen.
+	%Je nach Ordnerstruktur müssen auch im ersten Pfad die ..\angepasst werden.
+	{res/img}%
+}
+
+
+\title{Die Chroniken von Ilaris\\ Band II\\ Abenteuer und Spielhilfen aus der Community}
+
+\begin{document}
+\hauptteil
+\titelseite{%
+	\begin{centering}
+		\titelbild{cover.jpg}
+		\mbox{}
+		\vspace{10cm}
+		%\titel{Die Chroniken von Ilaris}
+		%\\ 
+		%Band II\\ Abenteuer und Spielhilfen aus der Community}
+		
+	%	\titel{Mockup}\\
+	%	 als Diskussionsgrundlage\\ für die Arbeit an der Anthologie zum ersten Ilaris-Abenteuerwettbewerb
+		
+%		\platz
+%		\fanprodukt
+	\end{centering}
+}
+\neueseite
+\subsection*{Version 0.1 vom \today}
+
+\platz
+\credit{Abenteuer-Autor*innen}{
+	Matthias Ott\\
+	% Tilmann Kircher\\
+	% \href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
+	% Rothar
+}
+\credit{Spielhilfen-Autor*innen}{	
+	% Alrik Normalpaktierer\\
+	% Gatsu\\
+	% Thymian\\
+	% \href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
+}
+\credit{Illustrationen}{
+	\href{https://www.artstation.com/bernhard\_eisner}{Bernhard Eisner}\\
+	% Norman Obst\\
+	% René Dudziak\\
+	\href{https://www.zillie-zeh.de/}{Zillie Zeh}
+}	
+\credit{\LaTeX-Klasse}{
+	\href{https://github.com/ilaris-tools/IlarisTex}{Lukas Ruhe}
+}
+\credit{Organisation}{
+	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}
+}
+\credit{Edition}{
+	Lukas Ruhe\\
+	Matthias Ott\\
+}
+\credit{Korrektorat}{
+	% Matthias Ott\\
+	% Tilmann Kircher
+}
+%\credit{Glossar}{\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}}
+\lizenz
+\inhaltsverzeichnis
+\neueseite
+
+\kapitel{Auf ein Wort ...}
+\spaltenanfang
+Einleitung (input)
+\spaltenende
+
+
+\input{asche_im_wind}
+
+% charaktere 
+\neueseite
+\ohnehintergrund
+\includepdf[pages=-,addtotoc={1,section,1,Arion Nebelsucherin,nsc1}]{einreichungen/1/Charaktere/Arion Nebelsucherin.pdf}
+\includepdf[pages=-,addtotoc={1,section,1,Donata Donnerschlag,nsc2}]{einreichungen/1/Charaktere/Donata Donnerschlag.pdf}
+\includepdf[pages=-,addtotoc={1,section,1,Elidir Fenius Galahan,nsc3}]{einreichungen/1/Charaktere/Elidir Fenius Galahan.pdf}
+\includepdf[pages=-,addtotoc={1,section,1,Karox Sohn des Kalgrix,nsc4}]{einreichungen/1/Charaktere/Karox Sohn des Kalgrix.pdf}
+\includepdf[pages=-,addtotoc={1,section,1,Selindian der Würstchenspalter,nsc5}]{einreichungen/1/Charaktere/Selindian der Wurstchenspalter.pdf}
+
+
+\neueseite
+\mithintergrund
+\kapitel{Zwei}
+\addcontentsline{toc}{section}{Worum es geht}
+\end{document}
