@@ -1,0 +1,139 @@
+<Charakter>
+  <Version>
+    <CharakterVersion>6</CharakterVersion>
+    <Plugins></Plugins>
+    <Hausregeln>Keine</Hausregeln>
+  </Version>
+  <Beschreibung>
+    <Name>Donata Donnerschlag</Name>
+    <Spezies>Mensch</Spezies>
+    <Status>2</Status>
+    <Kurzbeschreibung>Durchsetzungsstarke Amazone, die in Andergast aufgewachsen ist und sich von Männern nichts mehr sagen lässt.</Kurzbeschreibung>
+    <Finanzen>2</Finanzen>
+    <Heimat>Mittelreich</Heimat>
+    <Eigenheiten>
+      <Eigenheit>Dummer Spruch – Kieferbruch!</Eigenheit>
+      <Eigenheit></Eigenheit>
+      <Eigenheit>Würdiger Krieger gesucht</Eigenheit>
+      <Eigenheit></Eigenheit>
+      <Eigenheit>Ist der Fettnapf noch so klein, Donata tritt hinein.</Eigenheit>
+      <Eigenheit></Eigenheit>
+      <Eigenheit>Für die Königin!</Eigenheit>
+    </Eigenheiten>
+  </Beschreibung>
+  <Attribute>
+    <KO>5</KO>
+    <MU>4</MU>
+    <GE>6</GE>
+    <KK>4</KK>
+    <IN>3</IN>
+    <KL>2</KL>
+    <CH>2</CH>
+    <FF>4</FF>
+  </Attribute>
+  <Energien/>
+  <Vorteile>
+    <Vorteil name="Privilegien (Krieger)"/>
+    <Vorteil name="Verbindungen" variableKosten="40" kommentar="Amazonenreich Keshal Yeshinna"/>
+    <Vorteil name="Durchatmen"/>
+    <Vorteil name="Standfest"/>
+    <Vorteil name="Sturmangriff"/>
+  </Vorteile>
+  <Fertigkeiten>
+    <Fertigkeit name="Handgemenge" wert="6"/>
+    <Fertigkeit name="Hiebwaffen" wert="0"/>
+    <Fertigkeit name="Klingenwaffen" wert="6"/>
+    <Fertigkeit name="Stangenwaffen" wert="0"/>
+    <Fertigkeit name="Schusswaffen" wert="0"/>
+    <Fertigkeit name="Wurfwaffen" wert="6"/>
+    <Fertigkeit name="Athletik" wert="5"/>
+    <Fertigkeit name="Heimlichkeit" wert="5"/>
+    <Fertigkeit name="Selbstbeherrschung" wert="5"/>
+    <Fertigkeit name="Wahrnehmung" wert="2"/>
+    <Fertigkeit name="Autorität" wert="3"/>
+    <Fertigkeit name="Beeinflussung" wert="3"/>
+    <Fertigkeit name="Gebräuche" wert="3"/>
+    <Fertigkeit name="Derekunde" wert="3"/>
+    <Fertigkeit name="Mythenkunde" wert="3"/>
+    <Fertigkeit name="Magiekunde" wert="0"/>
+    <Fertigkeit name="Überleben" wert="5"/>
+    <Fertigkeit name="Verschlagenheit" wert="1"/>
+    <Fertigkeit name="Alchemie" wert="0"/>
+    <Fertigkeit name="Heilkunde" wert="2"/>
+    <Fertigkeit name="Handwerk" wert="0"/>
+    <FreieFertigkeit name="Sprache: Garethi" wert="3"/>
+    <FreieFertigkeit name="" wert="1"/>
+    <FreieFertigkeit name="" wert="1"/>
+    <FreieFertigkeit name="" wert="1"/>
+    <FreieFertigkeit name="Schrift: Kusliker Zeichen" wert="1"/>
+  </Fertigkeiten>
+  <Talente>
+    <Talent name="Gebräuche: Mittelreich"/>
+    <Talent name="Schilde"/>
+    <Talent name="Einhandklingenwaffen"/>
+    <Talent name="Wurfspeere"/>
+    <Talent name="Zähigkeit"/>
+  </Talente>
+  <Objekte>
+    <Zonensystem>0</Zonensystem>
+    <Rüstungen/>
+    <Waffen>
+      <Waffe name="Amazonensäbel" id="Amazonensäbel" würfel="2" würfelSeiten="6" plus="1" eigenschaften="Wendig" härte="10" rw="1" beSlot="1" kampfstil="Kein Kampfstil" wm="0"/>
+      <Waffe name="Holzschild" id="Holzschild" würfel="1" würfelSeiten="6" plus="0" eigenschaften="Schild, Stumpf" härte="8" rw="0" beSlot="1" kampfstil="Kein Kampfstil" wm="1"/>
+      <Waffe name="Wurfspeer" id="Wurfspeer" würfel="2" würfelSeiten="6" plus="3" eigenschaften="" härte="5" rw="8" beSlot="1" kampfstil="Kein Kampfstil" wm="0" lz="0"/>
+      <Waffe name="" id="" würfel="0" würfelSeiten="6" plus="0" eigenschaften="" härte="6" rw="0" beSlot="1" kampfstil="Kein Kampfstil" wm="0"/>
+      <Waffe name="" id="" würfel="0" würfelSeiten="6" plus="0" eigenschaften="" härte="6" rw="0" beSlot="1" kampfstil="Kein Kampfstil" wm="0"/>
+      <Waffe name="" id="" würfel="0" würfelSeiten="6" plus="0" eigenschaften="" härte="6" rw="0" beSlot="1" kampfstil="Kein Kampfstil" wm="0"/>
+      <Waffe name="" id="" würfel="0" würfelSeiten="6" plus="0" eigenschaften="" härte="6" rw="0" beSlot="1" kampfstil="Kein Kampfstil" wm="0"/>
+      <Waffe name="" id="" würfel="0" würfelSeiten="6" plus="0" eigenschaften="" härte="6" rw="0" beSlot="1" kampfstil="Kein Kampfstil" wm="0"/>
+    </Waffen>
+    <Ausrüstung>
+      <Ausrüstungsstück>Fackel</Ausrüstungsstück>
+      <Ausrüstungsstück></Ausrüstungsstück>
+      <Ausrüstungsstück>Zunderdose, Feuerstein und Stahl</Ausrüstungsstück>
+    </Ausrüstung>
+  </Objekte>
+  <ÜbernatürlicheFertigkeiten/>
+  <Erfahrung>
+    <Gesamt>2000</Gesamt>
+    <Ausgegeben>2000</Ausgegeben>
+  </Erfahrung>
+  <Notiz/>
+  <Einstellungen>
+    <VoraussetzungenPrüfen>1</VoraussetzungenPrüfen>
+    <Charakterbogen>Standard Charakterbogen</Charakterbogen>
+    <FinanzenAnzeigen>1</FinanzenAnzeigen>
+    <ÜbernatürlichesPDFSpalteAnzeigen>0</ÜbernatürlichesPDFSpalteAnzeigen>
+    <DetailsAnzeigen>0</DetailsAnzeigen>
+    <RegelnAnhängen>0</RegelnAnhängen>
+    <RegelnGrösse>8</RegelnGrösse>
+    <DeaktivierteRegelKategorien></DeaktivierteRegelKategorien>
+    <FormularEditierbarkeit>1</FormularEditierbarkeit>
+  </Einstellungen>
+  <BeschreibungDetails>
+    <Kultur>Mittelreich</Kultur>
+    <Profession></Profession>
+    <Geschlecht>weiblich</Geschlecht>
+    <Geburtsdatum></Geburtsdatum>
+    <Grösse></Grösse>
+    <Gewicht></Gewicht>
+    <Haarfarbe></Haarfarbe>
+    <Augenfarbe></Augenfarbe>
+    <Titel></Titel>
+    <Aussehen1></Aussehen1>
+    <Aussehen2></Aussehen2>
+    <Aussehen3></Aussehen3>
+    <Aussehen4></Aussehen4>
+    <Aussehen5></Aussehen5>
+    <Aussehen6></Aussehen6>
+    <Hintergrund0></Hintergrund0>
+    <Hintergrund1></Hintergrund1>
+    <Hintergrund2></Hintergrund2>
+    <Hintergrund3></Hintergrund3>
+    <Hintergrund4></Hintergrund4>
+    <Hintergrund5></Hintergrund5>
+    <Hintergrund6></Hintergrund6>
+    <Hintergrund7></Hintergrund7>
+    <Hintergrund8></Hintergrund8>
+  </BeschreibungDetails>
+</Charakter>

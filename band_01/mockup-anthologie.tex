@@ -1,0 +1,397 @@
+\documentclass[openright]{Ilaris}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{fourier}
+\usepackage{geometry}
+
+
+\newcommand{\iconsvg}[1]{{\raisebox{-0.2\baselineskip}{\includesvg[height=\baselineskip]{#1}\hspace{0.1cm}}}}%0.1
+%\newcommand{\icon}[1]{\includesvg[height=\baselineskip]{#1}\hspace{0.1cm}}
+\newcommand{\correct}{\iconsvg{res/img/correct}}
+\newcommand{\incorrect}{\iconsvg{res/img/incorrect}}
+\newcommand{\difficult}{\iconsvg{res/img/Schwierigkeit_schwierig}}
+\newcommand{\easy}{\iconsvg{res/img/Schwierigkeit_einfach}}
+\newcommand{\additional}{\iconsvg{res/img/Text_Zusatz}}
+\usepackage{svg}
+\usepackage{listings}
+\lstset
+{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\texttt\scriptsize,
+    keywordstyle=\color{dunkelrot},
+    identifierstyle=\color{braun},
+}
+
+\setdescription{itemsep=0cm} %\baselineskip
+\setenumerate{itemsep=0cm} %\baselineskip
+
+
+\graphicspath{
+	%Bilder liegen in Unterordnern. Hier Windows-Codiert. Für bessere Betriebssysteme \ mit / ersetzen.
+	%Je nach Ordnerstruktur müssen auch im ersten Pfad die ..\angepasst werden.
+	{res/img}%
+}
+
+\title{Die Chroniken von Ilaris\\ Band I\\ Abenteuer und Spielhilfen für den Einstieg in Ilaris}
+
+\begin{document}
+\hauptteil
+
+\titelseite{%
+	\begin{centering}
+		\titelbild{Cover.jpg}
+		
+		\mbox{}
+		\vspace{10cm}
+		
+		
+	%	\titel{Mockup}\\
+	%	 als Diskussionsgrundlage\\ für die Arbeit an der Anthologie zum ersten Ilaris-Abenteuerwettbewerb
+		
+%		\platz
+%		\fanprodukt
+	\end{centering}
+}
+\neueseite
+
+
+
+\subsection*{Version 1.0 vom \today}
+
+%0.4 -- Einarbeitung \enquote{Schmaus} (Xaver)
+
+%0.9 -- Feinheiten Layout S. 57
+
+%1.0 -- Einbau drei fehlender Grafiken%, Korrektur Formularfelder
+
+
+%0.8 -- Finalisieren Cover
+
+%0.8 -- Ausformulieren der Einleitung
+
+%0.9 -- Einbau restliche Spielhilfen (LaTeX-Tabellen in \enquote{Spielhilfen} noch zweifelhaft)
+
+%1.0 -- Korrektorat
+
+\platz
+\credit{Abenteuer-Autor*innen}{Tilmann Kircher\\
+	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
+	Rothar
+	}
+\credit{Spielhilfen-Autor*innen}{	Alrik Normalpaktierer\\
+	Gatsu\\
+	Thymian\\
+		\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
+}
+\credit{Illustrationen}{\href{https://www.artstation.com/bernhard\_eisner}{Bernhard Eisner}\\
+%	Fenia Winterkalt\\
+	Norman Obst\\
+	René Dudziak\\
+	\href{https://www.zillie-zeh.de/}{Zillie Zeh}
+		}
+
+\credit{Fotografien}{Lukas Ruhe}	
+
+\credit{\LaTeX-Klasse}{Lukas Ruhe}
+
+\credit{Edition}{Matthias Ott
+	\\	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}
+	}
+
+\credit{Korrektorat}{Matthias Ott\\Tilmann Kircher}
+%\credit{Glossar}{\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}}
+\lizenz
+
+%\fanprodukt
+
+\inhaltsverzeichnis
+
+\neueseite
+
+\kapitel{Auf ein Wort ...}
+\addcontentsline{toc}{section}{Worum es geht}
+
+\bild{anfang.png}
+
+\spaltenanfang
+
+\input{res/tex/einleitung}
+
+\spaltenende
+
+\neueseite
+
+\addcontentsline{toc}{chapter}{Beispielfiguren} \label{chars}
+
+\addcontentsline{toc}{section}{Ancara}\includepdf[pages=-,]{res/pdfs/ancara.pdf}
+
+\addcontentsline{toc}{section}{Odir Sensendengler}\includepdf[pages=-,]{res/pdfs/odir.pdf}
+
+%\bild[0.999\textwidth]{Ancara2.jpg}\neueseite
+%
+\addcontentsline{toc}{section}{Thara von Donnerbach}\includepdf[pages=-,]{res/pdfs/thara.pdf}
+
+%\bild[0.999\textwidth]{Thara1.jpg}\neueseite
+%
+%\bild[0.999\textwidth]{Thara2.jpg}\neueseite
+%
+%\bild[0.999\textwidth]{Thara3.jpg}\neueseite
+%
+%\bild[0.999\textwidth]{Odir1.jpg}\neueseite
+%
+%\bild[0.999\textwidth]{Odir2.jpg}\neueseite
+%
+\addcontentsline{toc}{section}{Ulfried Krück}\includepdf[pages=-,]{res/pdfs/ulf.pdf}
+
+
+%\bild[0.999\textwidth]{Ulf1.jpg}\neueseite
+%
+%\bild[0.999\textwidth]{Ulf2.jpg}\neueseite
+%
+%\bild[0.999\textwidth]{Ulf3.jpg}%
+%\neueseite%
+%\restoregeometry%
+%\mithintergrund%
+
+\addcontentsline{toc}{chapter}{Spielleitungs\-schirm}\label{schirm} \includepdf[pages=-,]{res/pdfs/Meisterschirm.pdf}
+
+
+
+\neueseite
+
+\addcontentsline{toc}{chapter}{1.\,Platz: \newline\anf{Ein Herz für Tairach}}
+%\zeichnung[6cm]{uigar.jpg}
+\begin{center}
+	\zeichnung{header_tairach.png}
+%\color{dunkelrot}\fontsize{16}{16}\aniron%
+%	von Tilmann Kircher\\[0mm]
+%\zeichnung{Tairach_Icon.png}
+%	\normalcolor
+%	\normalfont
+
+\usekomafont{subsection}
+Ein Abenteuer für 3 - 6 angehende Heldinnen und Helden (etwa 2.500 EP)
+\normalsize
+\normalfont
+\normalcolor
+
+\platz
+\abschnitt{Vorwort}
+
+	\geschichte{%
+		Vor mehr als 30 Jahren wurden in der ersten Spielhilfe zu Thorwal die orkischen Hafenarbeiter der Stadt Thorwal eingeführt.
+		Seitdem sind sie immer wieder mal erwähnt worden, wir haben ihre genauen Lebensumstände jedoch nie erfahren können.
+		Mich hat jetzt schon eine Weile die Frage umgetrieben, wie die eigentlich patriarchalischen Orks
+		(das Wort für \anf{Frau} auf Ologhaijan bedeutet übersetzt \anf{Tier das Orks gebiert})
+		innerhalb der Thorwalschen Gesellschaft mit Orkinnen umgehen. Laufen Orkinnen wie im Orkland unbekleidet herum oder kleiden sie sich wie menschliche Frauen Thorwals, bleiben sie ohne Namen oder haben sie zumindest einen an ihren Vater angelehnten Namen? Was geschieht, wenn ein Schamane, der Kontakt zur thorwalschen Kultur hat, magische Fähigkeiten bei einem Orkmädchen bemerkt? Sollte er darin nicht einen Wink Tairachs sehen? Nachdem ich diese Idee weitergesponnen habe, ist dieses Abenteuer dabei entstanden.
+	}{Tilmann Kircher, im Januar 2022}
+	
+	\platz
+	\credit{Layout}{Daniel Gunzelmann}
+	
+	\credit{Lektorat}{Stefan Ivenz\\Jörg Rüdenauer}
+	\platz
+	Mit Dank an meine Testspielerinnen und Testspieler\\
+	Daniel Gunzelmann, Stefan Ivenz, Jan Klose, Peter Lichtenwagner, Melanie Lippel,\\  Ralf Luger, Marle Müller, Julian Römer und Jörg Rüdenauer
+	
+\end{center}
+
+\platz
+
+\neueseite
+
+\spaltenanfang
+
+\input{res/tex/tairach}
+
+\spaltenende
+\neueseite
+
+\mbox{}
+
+\neueseite
+
+
+\kapitel{Manöverkarten}
+\label{karten}
+\begin{center}
+\usekomafont{section}von Gatsu
+\end{center}
+\normalfont
+\spaltenanfang
+Für die Spielleitung, die oft eine größere Bandbreite von Regeln im Blick haben muss und in Zweifelsfällen über die Auslegung entscheidet,
+haben wir den Spielleitungsschirm (ab S.\,\pageref{schirm}) eingebunden.
+
+Für die übrigen Gruppenmitglieder bieten wir hier einen Satz Manöverkarten\footnote{%
+	Unter diesem Namen wurde die Idee von kompakten Regelzusammenfassungen auf Spielkarten ursprünglich von Windfeder auf \link{http://wolkenturm.de/index.php?page=main\_neu}{wolkenturm.de} für DSA\,4 veröffentlicht. Seither haben sie sich für viele Spieler als nützliches Hilfsmittel erwiesen.} an.
+
+\section*{Inhalt}
+Auch die Manöverkarten enthalten die wichtigsten Regeln -- keineswegs nur Manöver -- ausdruckbar im Format klassischer Spielkarten.
+
+Die Karten sind auf verschiedenfarbige Decks aufgeteilt:
+\begin{itemize}
+\item \begriff{Proben und Profanes} (schwarz),
+\item \begriff{Kampf} (orange),
+\item \begriff{Gesundheit} (rot),
+\item \begriff{Magie} (violett) und
+\item \begriff{Karma} (gelb).
+\end{itemize}
+
+\section*{Vorbereitung}
+Druckt zunächst die relevanten Karten für jedes Gruppenmitglied aus.
+Verwendet dazu möglichst dickes, seidenmatt beschichtetes Papier (\enquote{\textit{coated silk}}).
+Die meisten Drucker unterstützen bis zu 180\,g/m\textsuperscript{2} Papiergewicht. Auf höhere Herstellerangaben ist leider kein Verlass.
+
+Schließlich müsst ihr die einzelnen Karten ausschneiden.
+Wenn euer Drucker nicht merkwürdig eingestellt ist, müssten sie 63,5\,mm auf 88\,mm messen.
+Das bedeutet, ihr könnt \textit{Card Sleeves} für Sammelkarten und Sammelmappenfolien verwenden,
+die es im Spielehandel zu kaufen gibt.
+Sleeves bieten Schutz gegen Abnutzung und können mit einem Folienstift beschrieben und rückstandslos wieder abgewischt werden.
+
+Einige Produkte -- beispielsweise \link{https://www.docsmagic.de/index.php?k=624\&lang=eng}{Docsmagic Premium Sleeves} -- haben bereits eine farbige Rückseite passend zu den Decks, so dass ihr die Karten nur einseitig bedrucken müsstet.
+
+Sortiert bestenfalls schon im Vorfeld irrelevante Karten aus, zum Beispiel \textbf{Reiterkampf}, wenn der Held kein Pferd hat
+oder das Manöver \textbf{Doppelangriff},
+wenn der Charakter nicht den Vorteil \textbf{Beidhändiger\,Kampf\,III} besitzt.
+Die Magie- und Karma-Decks können für profane Figuren komplett weggelassen werden.
+
+\bild{karten.jpg}
+
+\section*{Einsatz im Spiel}
+Im Spiel legst du je nach Situation die passenden Karten vor dir ab, um immer einen guten Überblick zu bewahren.
+Als Nahkämpfer könnten das z.\,B. die Karten \begriff{Aktion} \textbf{1} \& \textbf{2}, \begriff{Nahkampfmodifikatoren} und \begriff{Modifikator} sein.
+Manöver hältst du auf der Hand, spielst sie aus, wenn du sie ansagen möchtest und nimmst sie wieder auf die Hand, wenn die Wirkung beendet ist.
+
+\section*{Weitere Karten}
+Besonders für magiebegabte und geweihte Figuren interessant ist das \link{https://dsaforum.de/viewtopic.php?p=2002977\#p2002979}{Manöverkarten-Plugin} für \link{https://dsaforum.de/app.php/dlext/?view=detail\&df\_id=213}{Sephrasto},
+welches unter anderem alle erlernten Zauber und Liturgien in Manöverkarten ausgibt.
+
+Wenn ihr darüber hinaus noch eigene Karten erstellen wollt,
+könnt ihr sie komfortabel mit der \link{https://github.com/Ilaris-Tools/IlarisTex/blob/main/template.pdf}{Ilaris-LaTeX-Klasse} über den Befehl \verb|\karte{ }| texten und erzeugen.
+\spaltenende
+
+\includepdf[pages=-,
+noautoscale=true,
+nup=3x3,
+offset=2mm 6mm,
+delta=6mm 7mm,
+addtotoc={1, section, 1, Proben \& Profanes, proben,
+	8, section, 1, Kampf, kampf,
+59, section, 1, Gesundheit, gesundheit,
+67, section, 1, Magie, magie,
+87, section, 1, Karma, karma}]%
+	{res/pdfs/Manoverkarten.pdf}
+
+
+
+\addcontentsline{toc}{chapter}{2.\,Platz: \newline\anf{Festtagsschmaus}}
+
+\begin{center}
+		\zeichnung{header_schmaus.PNG}
+	
+	\platz
+	\slshape
+	\geschichte{Durch schlechte Köche -- durch den vollkommenen Mangel an Vernunft in der Küche ist die Entwicklung des Menschen am längsten aufgehalten, am schlimmsten beeinträchtigt worden: es steht heute selbst noch wenig besser.\newline
+		Ein Bissen guter Nahrung entscheidet oft, ob wir mit hohlem Auge oder hoffnungsreich in die Zukunft schauen.}{aus den Chroniken von Ilaris}
+
+	\platz
+\end{center}
+\normalfont
+	
+\section*{Danksagung}
+	
+	Danke an Ilaris, Lukas (Curthan) Schafzahl, Gurrgak, Das Schwarze Auge und natürlich meiner Spielerschaft. Besonderer Dank gebührt der Weihnachtsschließung der Universität, ohne die ich keine Zeit für den Wettbewerb gefunden hätte.
+	\platz
+%	\noindent\fbox{%
+%	\parbox{0.5\linewidth}{%~0.5 wenn das blöd aussieht, abändern ;)
+			\begin{center}
+			
+			\bild[8cm]{meister-handouts.png}
+			
+			\end{center}
+%		}%
+%	}
+
+\platz
+\neueseite
+
+\spaltenanfang
+\input{res/tex/schmaus.tex}
+
+\kapitel{Einen Spielabend vorbereiten}
+%\begin{center}
+%	\color{dunkelrot}\fontsize{16}{16}\aniron
+%{von Alrik Normalpaktierer}
+%\normalcolor
+%\normalfont
+%\normalsize
+%\end{center}
+\spaltenanfang
+
+\label{vorbereiten}
+\input{res/tex/vorbereiten}
+
+\spaltenende
+
+
+\addcontentsline{toc}{chapter}{3.\,Platz: \anf{Ein Abend, \newline teuer für Einsteiger}}
+
+\begin{center}
+	\zeichnung{header_abend.PNG}
+	
+\usekomafont{section}
+	\bigskip
+	Jänner 2022
+	\end{center}
+
+
+
+\platz
+
+\section*{Danksagung}
+
+\normalcolor
+\normalfont
+\normalsize
+
+Mein Dank gebührt Chris, Christian, Daniel, Gregor, Kathi, Kurt, Martina, Nadine, Renate, Wolf und Wolfgang mit denen ich nun schon seit drei Jahrzehnten in Aventurien, auf Entaria oder so mancher anderer phantastischer Welt um die Häuser ziehe. Und meiner Frau Maria, die viel Verständnis für diese Leidenschaft zeigt.
+
+
+\platz
+
+\neueseite
+
+\spaltenanfang
+\input{res/tex/abend}
+\spaltenende
+
+\rowcolors{2}{}{brown!55}
+
+\kapitel{Spielhilfen anderswo}
+\label{spielhilfen}
+\begin{center}
+	\color{dunkelrot}\fontsize{16}{16}\aniron
+	{für den Einstieg in das Spiel mit Ilaris}
+	\normalcolor
+	\normalfont
+\end{center}
+
+\input{res/tex/spielhilfen}
+
+\kapitelihvz{Anhang}{Anhang: Von DSA\,4 oder DSA\,5 auf Ilaris umsteigen}
+
+\begin{center}
+\usekomafont{section}{FAQ: Von DSA\,4 oder DSA\,5 auf Ilaris umsteigen}
+
+\smallskip
+
+	von MadW
+\end{center}
+\spaltenanfang
+\label{dsa4}
+
+\input{res/tex/dsa4}
+\spaltenende
+
+\end{document}
