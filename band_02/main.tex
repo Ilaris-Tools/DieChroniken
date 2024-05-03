@@ -4,13 +4,74 @@
 \usepackage{fourier}
 \usepackage{geometry}
 
+\setlist{nolistsep, align=parleft,left=5pt..1.5em}
+
+\renewtcolorbox{pergamentbox}[1][]{
+	unbreakable,
+	blankest,
+	top=0.03\linewidth,
+	left=0.03\linewidth,
+	right=0.03\linewidth,
+	bottom=0.03\linewidth,
+	watermark graphics=gfx/kasten/kasten_farbe.png, 
+	watermark stretch=1,
+	width=\linewidth,
+	#1
+}
+
+\newtcolorbox{whitebox}[1][]{
+	enhanced jigsaw,
+	unbreakable,
+	%blankest,
+	boxsep=0pt,
+	%nobeforeafter,
+	arc=0mm,
+	outer arc=0mm
+	boxrule=0mm,
+	leftrule=1mm,
+	rightrule=0mm,
+	bottomrule=0mm,
+	toprule=0mm,
+	top=2mm,
+	left=2mm,
+	right=2mm,
+	bottom=2mm,
+	colframe=beige,
+	width=\linewidth,
+	colback=white,
+	#1
+}
+\newcommand{\vorlesen}[1]{\begin{whitebox}#1\end{whitebox}}
+
+%TODO Der Font muss jeweils systemspezifisch angepasst werden.
+\newfontfamily{\rog}{Rogolan.ttf}
+
+\newcommand{\fkv}{Finsterkamm-Volk }
+\newcommand{\fkvs}{Finsterkamm-Volks }
+
+
+\newcommand{\amboss}{\hline\zeichnung{amboss.png}\\[10pt]}
+\newcommand{\leer}{\hline\\[1.2cm]}
+\newcommand{\linkeseite}{\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}}
+		\newcommand{\mitte}{
+			\hline
+		\end{tabularx}
+		\neuespalte
+		\begin{center}
+			\usekomafont{chapter}
+		}
+
 
 \setdescription{itemsep=0cm} %\baselineskip
 \setenumerate{itemsep=0cm} %\baselineskip
 
+%TODO: Ggf. auf Windows-Systemen andere /\-Konvention berücksichtigen.
 \graphicspath{
 	%Bilder liegen in Unterordnern. Hier Windows-Codiert. Für bessere Betriebssysteme \ mit / ersetzen.
 	%Je nach Ordnerstruktur müssen auch im ersten Pfad die ..\angepasst werden.
+	{asche_im_wind/gfx}
+	{klamm_und_heimlich/gfx}
+	{bergkoenig/gfx}
 	{res/img}%
 }
 
@@ -36,14 +97,18 @@
 	\end{centering}
 }
 \neueseite
-\subsection*{Version 0.1 vom \today}
+\subsection*{Version 0.2 vom \today}
 
 \platz
+
+\credit{Organisation und Redaktion}{
+	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}
+}
+
 \credit{Abenteuer-Autor*innen}{
-	Matthias Ott\\
-	% Tilmann Kircher\\
-	% \href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
-	% Rothar
+	%Matthias Ott\\
+	
+	
 }
 \credit{Spielhilfen-Autor*innen}{	
 	% Alrik Normalpaktierer\\
@@ -60,10 +125,9 @@
 \credit{\LaTeX-Klasse}{
 	\href{https://github.com/ilaris-tools/IlarisTex}{Lukas Ruhe}
 }
-\credit{Organisation}{
-	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}
-}
-\credit{Edition}{
+
+\credit{Satz}{
+	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
 	Lukas Ruhe\\
 	Matthias Ott\\
 }
@@ -76,27 +140,62 @@
 \inhaltsverzeichnis
 \neueseite
 
-\kapitel{Auf ein Wort ...}
+\kapitel{Vorwort}
 \spaltenanfang
-Einleitung (input)
+Einleitung von Xaver (input)
+
+\abschnitt{Hinweise zur Orientierung}
+\vorlesen{Texte zum Vorlesen oder Nacherzählen sind generell durch diesen Kasten hervorgehoben.}
+
+\kasten{Braune Kästen hingegen enthalten Hintergrund-Informationen zum besseren Verständnis.}
+
+\info{Diese Kästen nutze ich für Anweisungen an Sie als Spielleitung.}
+
+\probe{Klugheit}{Probenkästen}{weisen darauf hin, dass ein Würfelwurf die Szene entscheidend verändern kann.}
+
+\probenkasten[
+bild=beeinflussung,
+erfolg={Dann kann man hier lesen, was im Erfolgsfall \dots},
+misserfolg={\dots und hier, was bei einem Misserfolg passiert.},
+zusammenarbeit=nein,
+pw=X,
+farbe=rot
+]{Größere Kästen}{%
+	erlauben beispielsweise, mehrere Schwierigkeiten anzugeben. In so einem Fall wählt das würfelnde Gruppenmitglied die gewünschte Schwierigkeit jeweils selbst.\\
+	Die Symbole geben an, ob \emph{Zusammenarbeit} möglich ist, ob es sich um eine \emph{Gruppenprobe} handelt, welche \emph{Schwierigkeit} zu überwürfeln ist, welcher \emph{Detailgrad} anliegt und ob die Probe \emph{vergleichend} oder als offener Wurf gegen eine feste Schwierigkeit abgelegt wird.
+}
+
+
 \spaltenende
 
+\newpage
 
+\kapitel{Asche im Wind}
 \input{asche_im_wind/abenteuer}
+
+\newpage
+
+\kapitel{Klamm und heimlich}
 \input{klamm_und_heimlich/abenteuer}
-\input{bergkoenig/abenteuer}
+
+\newpage
+
+\kapitel{In den Hallen\linebreak des Bergkönigs}
+\input{bergkoenig/in-den-hallen-des-bergkoenigs.tex}
+\includepdf[pages=-,addtotoc={1,section,1,Dascha,sc1}]{bergkoenig/pdf/Dascha.pdf}
+
 % charaktere 
 \neueseite
 \ohnehintergrund
 % klamm und heimlich
-\includepdf[pages=-,addtotoc={1,section,1,Arion Nebelsucherin,nsc1}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Donata Donnerschlag,nsc2}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Elidir Fenius Galahan,nsc3}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Karox Sohn des Kalgrix,nsc4}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Selindian der Würstchenspalter,nsc5}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
-% asche im wind
-\includepdf[pages=-,addtotoc={1,section,1,Eisen-Ala,nsc6}]{asche_im_wind/charaktere/eisen_ala.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Falkja Narejko,nsc7}]{asche_im_wind/charaktere/falkja_narejko.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Arion Nebelsucherin,nsc1}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Donata Donnerschlag,nsc2}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Elidir Fenius Galahan,nsc3}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Karox Sohn des Kalgrix,nsc4}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Selindian der Würstchenspalter,nsc5}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
+%% asche im wind
+%\includepdf[pages=-,addtotoc={1,section,1,Eisen-Ala,nsc6}]{asche_im_wind/charaktere/eisen_ala.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Falkja Narejko,nsc7}]{asche_im_wind/charaktere/falkja_narejko.pdf}
 
 \neueseite
 \mithintergrund
