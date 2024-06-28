@@ -43,7 +43,7 @@
 }
 \newcommand{\vorlesen}[1]{\begin{whitebox}#1\end{whitebox}}
 
-%TODO Der Font muss jeweils systemspezifisch angepasst werden.
+%TODO Der Font muss jeweils systemspezifisch angepasst werden. Es funktioniert grundsätzlich, die ttf im selben Ordner abzulegen wie das Wurzeldokument.
 \newfontfamily{\rog}{Rogolan.ttf}
 
 \newcommand{\fkv}{Finsterkamm-Volk }
@@ -69,9 +69,9 @@
 \graphicspath{
 	%Bilder liegen in Unterordnern. Hier Windows-Codiert. Für bessere Betriebssysteme \ mit / ersetzen.
 	%Je nach Ordnerstruktur müssen auch im ersten Pfad die ..\angepasst werden.
-	{asche_im_wind/gfx}
-	{klamm_und_heimlich/gfx}
-	{bergkoenig/gfx}
+	{asche_im_wind/gfx/}
+	{klamm_und_heimlich/gfx/}
+	{bergkoenig/gfx/}
 	{res/img}%
 }
 
@@ -97,7 +97,23 @@
 	\end{centering}
 }
 \neueseite
-\subsection*{Version 0.2 vom \today}
+\subsection*{Version 0.3 vom \today\linebreak Versionsgeschichte}
+\subsubsection*{0.3}
+Vereinheitlichung Zitation und andere Markups in den drei Abenteuern
+
+Plätze für Grafiken (vorbehaltlich Textänderungen nach Feedback)
+
+Hierarchie der Überschriften vereinheitlicht
+\subsubsection{0.2}
+Groblayout drei Abenteuer
+
+Einbau Probenkästen
+
+Interne Referenzen
+%TODO: Formatierungskonventionen
+%Zitatangaben kursiv und mit Doppelpunkt: \emph{Reich des roten Mondes:69}, das Regelbuch als \emph{Ilaris:9}.
+%\textbf{Aventurische Begriffe}, \emph{Regelwerk-Begriffe}, \textsc{Name von Zauber oder Liturgie}.
+
 
 \platz
 
@@ -149,7 +165,7 @@ Einleitung von Xaver (input)
 
 \kasten{Braune Kästen hingegen enthalten Hintergrund-Informationen zum besseren Verständnis.}
 
-\info{Diese Kästen nutze ich für Anweisungen an Sie als Spielleitung.}
+\info{Diese Kästen nutzen wir für Anweisungen an Sie als Spielleitung.}
 
 \probe{Klugheit}{Probenkästen}{weisen darauf hin, dass ein Würfelwurf die Szene entscheidend verändern kann.}
 
@@ -162,7 +178,7 @@ pw=X,
 farbe=rot
 ]{Größere Kästen}{%
 	erlauben beispielsweise, mehrere Schwierigkeiten anzugeben. In so einem Fall wählt das würfelnde Gruppenmitglied die gewünschte Schwierigkeit jeweils selbst.\\
-	Die Symbole geben an, ob \emph{Zusammenarbeit} möglich ist, ob es sich um eine \emph{Gruppenprobe} handelt, welche \emph{Schwierigkeit} zu überwürfeln ist, welcher \emph{Detailgrad} anliegt und ob die Probe \emph{vergleichend} oder als offener Wurf gegen eine feste Schwierigkeit abgelegt wird.
+	Die Symbole geben an, ob mit einem oder drei Würfeln gewürfelt wird \emph{(Ilaris:7)} \emph{Zusammenarbeit} möglich ist, ob es sich um eine \emph{Gruppenprobe} handelt, welche \emph{Schwierigkeit} \emph{(Ilaris:8)} zu überwürfeln ist, welcher \emph{Detailgrad} anliegt und ob die Probe \emph{vergleichend} \emph{(Ilaris:9)} oder als offener Wurf gegen eine feste Schwierigkeit abgelegt wird.
 }
 
 
@@ -175,30 +191,34 @@ farbe=rot
 
 \newpage
 
+%% asche im wind
+%TODO Charaktere ohne Formularfunktion exportieren und einbinden
+%\includepdf[pages=-,addtotoc={1,section,1,Eisen-Ala,nsc6}]{asche_im_wind/charaktere/eisen_ala.pdf}
+%\includepdf[pages=-,addtotoc={1,section,1,Falkja Narejko,nsc7}]{asche_im_wind/charaktere/falkja_narejko.pdf}
+
 \kapitel{Klamm und heimlich}
 \input{klamm_und_heimlich/abenteuer}
 
 \newpage
 
-\kapitel{In den Hallen\linebreak des Bergkönigs}
-\input{bergkoenig/in-den-hallen-des-bergkoenigs.tex}
-\includepdf[pages=-,addtotoc={1,section,1,Dascha,sc1}]{bergkoenig/pdf/Dascha.pdf}
-
-% charaktere 
-\neueseite
-\ohnehintergrund
 % klamm und heimlich
+%TODO Charaktere ohne Formularfunktion exportieren und einbinden
 %\includepdf[pages=-,addtotoc={1,section,1,Arion Nebelsucherin,nsc1}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
 %\includepdf[pages=-,addtotoc={1,section,1,Donata Donnerschlag,nsc2}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
 %\includepdf[pages=-,addtotoc={1,section,1,Elidir Fenius Galahan,nsc3}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
 %\includepdf[pages=-,addtotoc={1,section,1,Karox Sohn des Kalgrix,nsc4}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
 %\includepdf[pages=-,addtotoc={1,section,1,Selindian der Würstchenspalter,nsc5}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
-%% asche im wind
-%\includepdf[pages=-,addtotoc={1,section,1,Eisen-Ala,nsc6}]{asche_im_wind/charaktere/eisen_ala.pdf}
-%\includepdf[pages=-,addtotoc={1,section,1,Falkja Narejko,nsc7}]{asche_im_wind/charaktere/falkja_narejko.pdf}
 
+\kapitel{In\,den\,Hallen\,\allowbreak des\,Bergkönigs}
+
+\input{bergkoenig/in-den-hallen-des-bergkoenigs.tex}
+%TODO Charaktere ohne Formularfunktion exportieren und einbinden
+%\includepdf[pages=-,addtotoc={1,section,1,Dascha,sc1}]{bergkoenig/pdf/Dascha.pdf}
+
+% charaktere 
 \neueseite
-\mithintergrund
-\kapitel{Zwei}
-\addcontentsline{toc}{section}{Worum es geht}
+\ohnehintergrund
+
+
+
 \end{document}
