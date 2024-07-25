@@ -1,4 +1,3 @@
-
 \kapitel{Klamm und heimlich}
 \begin{center}
 
@@ -351,106 +350,53 @@ Falls du den Handlungsfaden hier enden lassen willst, dann ist \textbf{Treudane}
 
 \spaltenanfang
 
-%TODO: Kampfwerte in LaTeX übertragen.
+\absatz{Kampfwerte}
 
-\label{greifax}
- {{humanoid
- \absatz{Greifax}
- *„Mächtiger“ Meckerdrache*
+\kreatur{Greifax}{\enquote{Mächtiger} Meckerdrache}{mythen}{
+	\label{greifax}
+    \kreaturkampfwerte{12}{8}{1, fliegend 12}{5}
+    \trennlinie
+	\kreaturattribute{KK 6, KO 6, KL 4, IN 8, FF 2, GE 4, MU 4}
+    \trennlinie
+    \kreaturwaffe{Klauen}{0}{6}{10}{2W6+1}{Sturmangriff (max +6)}
+	\kreaturwaffe{Feuerodem}{4}{1}{12}{2W6+2}{Flächenangriff (90° vor dem Drachen), Nachbrennen}
+	\trennlinie
+	\kreaturinfo{Kampfverhalten}{Bei Gefahr stellt sich Greifax bei der ersten sich bietenden Gelegenheit theatralisch tot.}
+}
 
+\kreatur{Duglim}{Skrupelloser Zwergenschmied}{humanoid}{
+	\label{duglim}
+	\kreaturkampfwerte{6/7}{9}{5}{4}
+	\trennlinie
+	\kreaturattribute{KK 8, KO 16, KL 6, IN 8, FF 8, GE 8}
+	\trennlinie
+	\kreaturwaffe{Schmiedehammer}{1}{10}{9}{2W6}{Kopflastig, Rüstungsbrechend, Schwer (4), Stumpf}
+	\trennlinie
+	\kreaturinfo{Kleidung}{Schmiedeschürze (verleiht Resistenz I gegen Feuer).}
+}
+	
 
- |  WS  |  GS  |  INI  |  MR | 
- |:-----:|:-----:|:-----:|:-----:|
- |4/6|1, fliegend 12|5|8|
-
-
- |  KK  |  KO  |  KL  |  IN  |  FF  |  GE  |  MU  |
- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
- |6|6|4|8|2|4|4|
-
-
- | Nahkampf  | RW | AT | VT | TP    |
- |:----------|:--:|:--:|:--:|------:|
- | \textbf{Klauen} | 0  | 10 | 6 | 2W6+1 |
- | *Sturmangriff (max. +6 TP)* |||||
-
- | Fernkampf  | RW | LZ | FK | TP    |
- |:----------|:--:|:--:|:--:|------:|
- | \textbf{Feuerodem} | 4  | 1 | 12 | 2W6+2 |
- | *Flächenangriff (90° vor dem Drachen), Nachbrennen* |||||
-
-
- \textbf{Kampfverhalten:} :: Bei Gefahr stellt sich Greifax bei der ersten sich bietenden Gelegenheit theatralisch tot.
-
-
- }}
-
-
-\label{duglim}
- {{humanoid
- 		
-\absatz{Duglim}
- *Skrupelloser Zwergenschmied*
-
-
- |  WS  |  GS  |  INI  |  MR | 
- |:-----:|:-----:|:-----:|:-----:|
- |6/7|5|4|9|
-
-
- |  KK  |  KO  |  KL  |  IN  |  FF  |  GE  |
- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
- |8|16|6|8|8|8|
-
-
- | Nahkampf  | RW | AT | VT | TP    |
- |:----------|:--:|:--:|:--:|------:|
- | \textbf{Schmiedehammer} | 1  | 9 | 10 | 2W6 |
- | *Kopflastig, Rüstungsbrechend, Schwer (4), Stumpf* |||||
-
-
- \textbf{Kleidung:} ::Schmiedeschürze (verleiht Resistenz I gegen Feuer).
-
-
- }}
-
-
- {{humanoid
-\absatz{Ork-Schamane}
- *Shurrak Windzahn, Schamane des Schwarzen Banners*
-
-
- |  WS  |  GS  |  INI  |  MR | 
- |:-----:|:-----:|:-----:|:-----:|
- |5/6|4|2|8|
-
-
- |  KK  |  KO  |  KL  |  IN  |  FF  |  GE  |  CH  |  MU  |
- |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
- |8|12|10|16|8|8|12|12|
-
-
- | Nahkampf  | RW | AT | VT | TP    |
- |:----------|:--:|:--:|:--:|------:|
- | \textbf{Knochenkeule} | 1  | 10 | 10 | 2W6+1 |
- | *Kopflastig, Stumpf, Niederwerfen* |||||
-
-
- \textbf{Zaubersprüche:} :: Tairachs Krieger(Regelwerk S. 164), Brazoraghs Hieb (Regelwerk S. 164, wirkt auf Knochenstab und ist dort bereits eingerechnet), Geistertausch (Regelwerk S. 165)
- \textbf{Vorteile:} :: Tradition der Schamanen I+II
-
-
- }}
-
-
-
-\info{
-\absatz*{Geistertausch einsetzen}
-Der Schamane hat sich ein paar Schuppen von Greifax gesichert und könnte die Flucht behindern, indem er mit ihm die Seele tauscht und den Helden mit dem Flammenodem den Ausweg versperrt. Seinen eigenen Körper lässt er währenddessen von zwei Ork-Kriegern festhalten. Wenn er in Eile ist, verringert der Schamane die Vorbereitungszeit mittels der Modifikation \textit{Vorbereitungszeit verkürzen} (Regelwerk S. 71) von 16 auf 8 Aktionen.
+\kreatur{Ork-Schamane}{Shurrak Windzahn, Schamane des Schwarzen Banners}{humanoid}{
+	\label{shurrak}
+	\kreaturkampfwerte{5/6}{8}{4}{2}
+	\trennlinie
+	\kreaturattribute{KK 8, KO 12, KL 10, IN 16, FF 8, GE 8, CH 12, MU 12}
+	\trennlinie
+	\kreaturwaffe{Knochenkeule}{1}{10}{10}{2W6+1}{Kopflastig, Stumpf, Niederwerfen}
+	\trennlinie
+	\kreaturinfo{Zauber}{Tairachs Krieger \textit{Ilaris:164}, 
+	Brazoraghs Hieb \textit{Ilaris:164} ist bereits in Knochenkeule eingerechnet, 
+	Geistertausch \textit{Ilaris:165}}
+	\kreaturinfo{Geistertausch}{Der Schamane hat sich ein paar Schuppen von Greifax gesichert 
+	und könnte die Flucht behindern, 
+	indem er mit ihm die Seele tauscht und den Helden mit dem Flammenodem den Ausweg versperrt. 
+	Seinen eigenen Körper lässt er währenddessen von zwei Ork-Kriegern festhalten.
+	Wenn er in Eile ist, verringert der Schamane die Vorbereitungszeit mittels der Modifikation 
+	\textit{Vorbereitungszeit verkürzen} (Regelwerk S. 71) von 16 auf 8 Aktionen.}
 }
 
 
-\absatz{Handout 1: Der Brief}
+\subsection[Handouts]{Handout 1: Der Brief}
 \label{kuh_ho1}
 \kasten{
 \handschrift
@@ -462,7 +408,7 @@ in vier Tagen wird der weiche Wurm vom Markt zurückkehren. Er weiß alles, was 
 \end{flushright}
 }
 
-\absatz{Handout 2: Die Höhlenkarte}
+\subsection*{Handout 2: Die Höhlenkarte}
 \label{kuh_ho2}
 
 \spaltenende
@@ -470,10 +416,10 @@ in vier Tagen wird der weiche Wurm vom Markt zurückkehren. Er weiß alles, was 
 % CHARAKTERE
 \neueseite
 \ohnehintergrund
-\includepdf[pages=-,addtotoc={1,section,1,Arion Nebelsucherin,nsc1}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Donata Donnerschlag,nsc2}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Elidir Fenius Galahan,nsc3}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Karox Sohn des Kalgrix,nsc4}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
-\includepdf[pages=-,addtotoc={1,section,1,Selindian der Würstchenspalter,nsc5}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
+\includepdf[pages=-,addtotoc={1,section,1,Beispielcharaktere,kuhscs}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
+\includepdf[pages=-]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
+\includepdf[pages=-]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
+\includepdf[pages=-]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
+\includepdf[pages=-]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
 \neueseite
 \mithintergrund
