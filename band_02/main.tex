@@ -3,7 +3,7 @@
 \usepackage{verbatim}
 \usepackage{fourier}
 \usepackage{geometry}
-\input{kreaturen.tex}
+%\input{kreaturen.tex}
 
 \setlist{nolistsep, align=parleft,left=5pt..1.5em}
 
@@ -45,8 +45,8 @@
 \newcommand{\vorlesen}[1]{\begin{whitebox}#1\end{whitebox}}
 
 % NOTE Font liegt jetzt mit im Repository. Funktionert bei mir unter Windows und Linux.
-% newfontfamily{\rog}{Rogolan.ttf}
-\newfontfamily{\rog}{rogolan.otf}
+\newfontfamily{\rog}{Rogolan.ttf}
+%\newfontfamily{\rog}{rogolan.otf}
 
 \newcommand{\fkv}{Finsterkamm-Volk }
 \newcommand{\fkvs}{Finsterkamm-Volks }
@@ -74,6 +74,7 @@
 	{asche_im_wind/gfx/}
 	{klamm_und_heimlich/gfx/}
 	{bergkoenig/gfx/}
+	{spielhilfen/gfx/}
 	{res/img}%
 }
 
@@ -99,13 +100,43 @@
 	\end{centering}
 }
 \neueseite
-\subsection*{Version 0.4 vom \today\linebreak Versionsgeschichte}
+\subsection*{Version 0.5 vom \today}
+%TODO
+%Spielhilfen: Beschreibung der Brauerei (ggf. mit Videos)
+%Spielhilfen: Hummerier-Encounter formatieren
+%Neue Illustrationen einpflegen
+%Illustrationen aus Bernards Grafik-Paket einpflegen
+%Vorwort schreiben (Xaver)
+%Nachbesserungen der verbleibenden Autor*innen
+%TODO
+\subsection*{Versionsgeschichte}
+\subsubsection*{0.5}
+Encounter-Spielhilfe eingefügt und erste Hälfte layoutet
+
+Reihenfolge der Abenteuer verändert
+
+Todo-Liste für den Satz angelegt
+
+Finetuning \enquote{Schwarze Hand}
+
+Übersicht über die Spielhilfen begonnen
+
+Überarbeitung \enquote{Hallen des Bergkönigs} nach Jury-Feedback
+
+Autor*innennamen hinzugefügt
+
+IHVZ-Einträge für Charaktere, Leere Seiten aus den Charakterbögen gekürzt %TODO: Arion braucht noch einen Charakterbogen mit Porträt.
+
+Höhlenkarte (\enquote{Klamm und heimlich}) eingebunden
+
+Kleinere Korrekturen 
+
 \subsubsection*{0.4}
-Charrakterbögen eingebunden
+Charakterbögen eingebunden
 
-IHVZ angepasst  % TODO: nummerierung resettet in HdB
+IHVZ angepasst  
 
-Groblayout viertes Abenteuer % TODO: vereinhtl. layout
+Groblayout viertes Abenteuer 
 
 Kreaturenkästen für Klamm und heimlich
 
@@ -115,12 +146,15 @@ Vereinheitlichung Zitation und andere Markups in den drei Abenteuern
 Plätze für Grafiken (vorbehaltlich Textänderungen nach Feedback)
 
 Hierarchie der Überschriften vereinheitlicht
-\subsubsection{0.2}
-Groblayout drei Abenteuer
 
-Einbau Probenkästen
+%\subsubsection{0.2}
+%Groblayout drei Abenteuer
+%
+%Einbau Probenkästen
+%
+%Interne Referenzen
 
-Interne Referenzen
+
 %TODO: Formatierungskonventionen
 %Zitatangaben kursiv und mit Doppelpunkt: \emph{Reich des roten Mondes:69}, das Regelbuch als \emph{Ilaris:9}.
 %\textbf{Aventurische Begriffe}, \emph{Regelwerk-Begriffe}, \textsc{Name von Zauber oder Liturgie}.
@@ -133,12 +167,16 @@ Interne Referenzen
 }
 
 \credit{Abenteuer-Autor*innen}{
-	%Matthias Ott\\
-	
+	Matthias Ott\\
+	Tilmann Kircher\\
+	Jasmin Drogat\\
+	Benjamin Drogat\\
+	Matthias Thanos
 	
 }
 \credit{Spielhilfen-Autor*innen}{	
-	% Alrik Normalpaktierer\\
+	Arne Strehlow\\
+	Alrik Normalpaktierer
 	% Gatsu\\
 	% Thymian\\
 }
@@ -171,6 +209,8 @@ Interne Referenzen
 Einleitung von Xaver (input)
 
 \abschnitt{Hinweise zur Orientierung}
+Das Ilaris-Regelbuch wird im folgenden mit \emph{Ilaris} und der entsprechende Seitenzahl referenziert.
+
 \vorlesen{Texte zum Vorlesen oder Nacherzählen sind generell durch diesen Kasten hervorgehoben.}
 
 \kasten{Braune Kästen hingegen enthalten Hintergrund-Informationen zum besseren Verständnis.}
@@ -194,10 +234,66 @@ farbe=rot
 
 \spaltenende
 
-\input{asche_im_wind/abenteuer}
-\input{klamm_und_heimlich/abenteuer}
-\input{bergkoenig/in-den-hallen-des-bergkoenigs.tex}
-\input{schwarze_hand/abenteuer.tex}
 
+
+
+\kapitel{Klamm und heimlich}
+\input{klamm_und_heimlich/klamm-und-heimlich.tex}
+
+\neueseite
+\ohnehintergrund
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Arion Nebelsucherin,arion}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Donata Donnerschlag,donata}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Elidir Fenius Galahan,elidir}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Karox Sohn des Kalgrix,karox}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Selindian,selindian}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
+\neueseite
+\mithintergrund
+
+
+
+\kapitel{Die\,schwarze\,Hand\,\allowbreak im\,\allowbreak wengen\-holmer\allowbreak\,Land}
+\input{schwarze_hand/schwarze-hand.tex}
+
+
+
+\kapitel{Asche im Wind}
+\input{asche_im_wind/asche-im-wind.tex}
+
+\neueseite
+\ohnehintergrund
+\includepdf[pages=1-2,addtotoc={1,subsection,1,Charakterbogen Alruna \enquote{Eisen-Ala},eisenala}]{asche_im_wind/charaktere/eisen_ala.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Falkja Narejko,falkja}]{asche_im_wind/charaktere/falkja_narejko.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Melcher Ziegelbart,melcher}]{asche_im_wind/charaktere/melcher.pdf}
+\includepdf[pages=-, addtotoc={1,subsection,1,Charakterbogen Roana Wildfang,roana}]{asche_im_wind/charaktere/roana_wildfang.pdf}
+\includepdf[pages=1-2,addtotoc={1,subsection,1,Charakterbogen Wiesel-Rupo,rupo}]{asche_im_wind/charaktere/wiesel_rupo.pdf}
+\neueseite
+\mithintergrund
+
+
+\kapitel{In den Hallen\allowbreak\ des Bergkönigs}
+\input{bergkoenig/in-den-hallen-des-bergkoenigs.tex}
+
+\neueseite
+\handout
+
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Dascha (Tierkriegerin),dascha}]{bergkoenig/pdf/dascha.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Jasinthe (Gelehrte),jasinthe}]{bergkoenig/pdf/jasinthe.pdf}
+%\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Zwergische Angrosch-Geweihte, Hüterin der Wacht),graboxa}]{bergkoenig/pdf/graboxa.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Geweihte),graboxa}]{bergkoenig/pdf/Graboxa.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Odir (Pferdedieb),odir}]{bergkoenig/pdf/odir_sensendengler.pdf}
+
+\handoutende
+
+
+
+
+\kapitel{Spielhilfen}
+\section{Übersicht über verfügbare Spielhilfen}
+\input{spielhilfen/spielhilfen.tex}
+
+\newpage
+\section{Encounter-Design}
+\input{spielhilfen/encounter.tex}
 
 \end{document}
