@@ -101,14 +101,27 @@
 	\end{centering}
 }
 \neueseite
-\subsection*{Version 0.6 vom \today}
 %TODO
+
+%Neue Slogans Sephrasto
 % Überschriften außerhalb von multicols zentriert?
 %Spielhilfen: Beschreibung der Brauerei (ggf. mit Videos)
 %Neue Illustrationen einpflegen
-%Vorwort schreiben (Xaver)
 %Nachbesserungen der verbleibenden Autor*innen
 %TODO
+
+\subsection*{Version 0.7 vom \today}
+Titelseiten-Design vorbereitet und zwei Grafiken Bernard eingefügt
+
+Vorwort eingefügt
+
+Nachbesserungen \enquote{Asche}
+
+Korrektorat Charakterbögen \enquote{Bergkönig}
+
+Anhänge zum Ausdrucken ans Ende verschoben
+
+
 \subsection*{Versionsgeschichte}
 \subsubsection*{0.6}
 Inhaltsverzeichnis gekürzt
@@ -121,35 +134,35 @@ Abenteuer aus dem Bestand bebildert
 
 Kleinere Korrekturen
 
-\subsubsection*{0.5}
-Encounter-Spielhilfe eingefügt und erste Hälfte layoutet
-
-Reihenfolge der Abenteuer verändert
-
-Todo-Liste für den Satz angelegt
-
-Finetuning \enquote{Schwarze Hand}
-
-Übersicht über die Spielhilfen begonnen
-
-Überarbeitung \enquote{Hallen des Bergkönigs} nach Jury-Feedback
-
-Autor*innennamen hinzugefügt
-
-IHVZ-Einträge für Charaktere, Leere Seiten aus den Charakterbögen gekürzt %TODO: Arion braucht noch einen Charakterbogen mit Porträt.
-
-Höhlenkarte (\enquote{Klamm und heimlich}) eingebunden
-
-Kleinere Korrekturen 
-
-\subsubsection*{0.4}
-Charakterbögen eingebunden
-
-IHVZ angepasst  
-
-Groblayout viertes Abenteuer 
-
-Kreaturenkästen für Klamm und heimlich
+%\subsubsection*{0.5}
+%Encounter-Spielhilfe eingefügt und erste Hälfte layoutet
+%
+%Reihenfolge der Abenteuer verändert
+%
+%Todo-Liste für den Satz angelegt
+%
+%Finetuning \enquote{Schwarze Hand}
+%
+%Übersicht über die Spielhilfen begonnen
+%
+%Überarbeitung \enquote{Hallen des Bergkönigs} nach Jury-Feedback
+%
+%Autor*innennamen hinzugefügt
+%
+%IHVZ-Einträge für Charaktere, Leere Seiten aus den Charakterbögen gekürzt 
+%
+%Höhlenkarte (\enquote{Klamm und heimlich}) eingebunden
+%
+%Kleinere Korrekturen 
+%
+%\subsubsection*{0.4}
+%Charakterbögen eingebunden
+%
+%IHVZ angepasst  
+%
+%Groblayout viertes Abenteuer 
+%
+%Kreaturenkästen für Klamm und heimlich
 
 %\subsubsection*{0.3}
 %Vereinheitlichung Zitation und andere Markups in den drei Abenteuern
@@ -194,6 +207,7 @@ Kreaturenkästen für Klamm und heimlich
 \credit{Illustrationen}{
 	\href{https://www.artstation.com/bernhard\_eisner}{Bernhard Eisner}\\
 	Matthias Thanos\\
+	Alnus (Anton Dobsak)\\
 	% Norman Obst\\
 	% René Dudziak\\
 	\href{https://www.zillie-zeh.de/}{Zillie Zeh}
@@ -219,9 +233,9 @@ Kreaturenkästen für Klamm und heimlich
 
 \kapitel{Vorwort}
 \spaltenanfang
-Einleitung von Xaver (input)
+\input{vorwort}
 
-\abschnitt{Hinweise zur Orientierung}
+\subsection*{Hinweise zur Orientierung}
 Das Ilaris-Regelbuch wird im folgenden mit \emph{Ilaris} und der entsprechende Seitenzahl referenziert.
 
 \vorlesen{Texte zum Vorlesen oder Nacherzählen sind generell durch diesen Kasten hervorgehoben.}
@@ -244,6 +258,13 @@ farbe=rot
 	Die Symbole geben an, ob mit einem oder drei Würfeln gewürfelt wird \emph{(Ilaris:7)} \emph{Zusammenarbeit} möglich ist, ob es sich um eine \emph{Gruppenprobe} handelt, welche \emph{Schwierigkeit} \emph{(Ilaris:8)} zu überwürfeln ist, welcher \emph{Detailgrad} anliegt und ob die Probe \emph{vergleichend} \emph{(Ilaris:9)} oder als offener Wurf gegen eine feste Schwierigkeit abgelegt wird.
 }
 
+\bigskip
+
+Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen und Anregungen.
+
+\bigskip
+
+\textsl{Xaver Stiensmeier}
 
 \spaltenende
 
@@ -251,54 +272,103 @@ farbe=rot
 
 
 \kapitel{Klamm und heimlich}
+\thispagestyle{empty}
+
+\begin{center}
+	\usekomafont{section}
+	Ein Dungeon-Gruppenabenteuer
+	
+	\vfill
+%\zeichnung[\textwidth]{cover-asche.png}
+\vfill	
+	
+{\href{mailto:matthias.thanos@gmx.de}{Matthias Thanos}}
+	\normalfont\normalcolor\normalsize
+\end{center}
+	
+	\credit{Lektorat}{
+		Elisabeth Schmitt}
+	
+	\credit{Danksagung}{an alle, die an einer der vier Testrunden teilgenommen haben!}
+	
+	\credit{Titelbild \& Karte}{Matthias Thanos}
+
+\newpage
 \input{klamm_und_heimlich/klamm-und-heimlich.tex}
 
-\neueseite
-\ohnehintergrund
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Arion Nebelsucherin,arion}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Donata Donnerschlag,donata}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Elidir Fenius Galahan,elidir}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Karox Sohn des Kalgrix,karox}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Selindian,selindian}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
-\neueseite
-\mithintergrund
+
+\chapter*{Die schwarze\linebreak Hand im Wengen\-holmer Land}
+\addcontentsline{toc}{chapter}{Die\,schwarze\,Hand\,\allowbreak im\,\allowbreak Wengen\-holmer\allowbreak\,Land}
+\thispagestyle{empty}
+
+\begin{center}
+\usekomafont{section}
+    Ein Abenteuer für 3-6\\ angehende Heldinnen und Helden (2.000 EP)
+	\vfill
+	%\zeichnung[\textwidth]{cover-asche.png}
+	\vfill
+	
+	Tilmann Kircher
+	\normalfont\normalcolor\normalsize
+\end{center}
+
+\credit{Lektorat}{
+	Ralf Luger, Jörg Rüdenauer
+}
 
 
+\credit{Mit Dank an meine Testspielerinnen und Testspieler}{
+	Gianni Bischoff, Felipe Cardoso Kircher, Laura Cardoso Kircher, 
+	Silvia Cardoso Schöller,\\ Stefan Ivenz, Peter Lichtenwagner,
+	Ralf Luger, Julian Römer und Jörg Rüdenauer 
+}
 
-\kapitel{Die\,schwarze\,Hand\,\allowbreak im\,\allowbreak wengen\-holmer\allowbreak\,Land}
+\newpage
+
 \input{schwarze_hand/schwarze-hand.tex}
 
 
 
 \kapitel{Asche im Wind}
+
+\thispagestyle{empty}
+
+\begin{center}
+	\vfill
+	\zeichnung[\textwidth]{cover-asche.png}
+	\vfill
+	
+	\usekomafont{section}Azazyel (Benjamin Drogat) und Jasmin Drogat	
+	\normalfont\normalcolor\normalsize
+\end{center}
+
+\credit{Mit Dank an}{die Testspieler: Anja, Jessi, Meike, Philipp L., Philipp St.}
+
+\newpage
 \input{asche_im_wind/asche-im-wind.tex}
 
-\neueseite
-\ohnehintergrund
-\includepdf[pages=1-2,addtotoc={1,subsection,1,Charakterbogen Alruna \enquote{Eisen-Ala},eisenala}]{asche_im_wind/charaktere/eisen_ala.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Falkja Narejko,falkja}]{asche_im_wind/charaktere/falkja_narejko.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Melcher Ziegelbart,melcher}]{asche_im_wind/charaktere/melcher.pdf}
-\includepdf[pages=-, addtotoc={1,subsection,1,Charakterbogen Roana Wildfang,roana}]{asche_im_wind/charaktere/roana_wildfang.pdf}
-\includepdf[pages=1-2,addtotoc={1,subsection,1,Charakterbogen Wiesel-Rupo,rupo}]{asche_im_wind/charaktere/wiesel_rupo.pdf}
-\neueseite
-\mithintergrund
 
+\chapter*{In den Hallen\linebreak des Bergkönigs}
+\addcontentsline{toc}{chapter}{In den Hallen\allowbreak\ des Bergkönigs}
 
-\kapitel{In den Hallen\allowbreak\ des Bergkönigs}
+\thispagestyle{empty}
+
+\begin{center}
+\zeichnung[0.69\textwidth]{cover-bergkoenig.png}\\
+\usekomafont{section}Matthias Ott\normalfont\normalcolor\normalsize
+\end{center}
+
+\credit{Illustrationen}{\href{https://www.artstation.com/bernhard\_eisner}Alnus (Anton Dobsak)\\
+	{Bernhard Eisner}\\
+	\href{https://www.zillie-zeh.de/}{Zillie Zeh}\\	
+	game-icons.net
+}
+\credit{Mit Dank an}{Kilian Linder für konstruktives Feedback,\\ Xaver Stiensmeier für die Ausrichtung des Wettbewerbs und Odir Sensendengler\\ sowie die geduldige Testgruppe: Jascha, Gloria, Meike und Hannes
+}
+
+\newpage
+
 \input{bergkoenig/in-den-hallen-des-bergkoenigs.tex}
-
-\neueseite
-\handout
-
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Dascha (Tierkriegerin),dascha}]{bergkoenig/pdf/dascha.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Jasinthe (Gelehrte),jasinthe}]{bergkoenig/pdf/jasinthe.pdf}
-%\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Zwergische Angrosch-Geweihte, Hüterin der Wacht),graboxa}]{bergkoenig/pdf/graboxa.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Geweihte),graboxa}]{bergkoenig/pdf/Graboxa.pdf}
-\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Odir (Pferdedieb),odir}]{bergkoenig/pdf/odir_sensendengler.pdf}
-
-\handoutende
-
-
 
 
 \kapitel{Spielhilfen}
@@ -308,5 +378,328 @@ farbe=rot
 \newpage
 \section{Encounter-Design}
 \input{spielhilfen/encounter.tex}
+
+
+\kapitel{Anhänge zum Ausdrucken}
+\ohnehintergrund
+
+\section{Klamm und heimlich}
+
+\subsection[Handouts]{Handout 1: Der Brief}
+\label{kuh_ho1}
+\bigskip
+\kasten{
+	\handschrift
+	Mächtiger Shurrak,\\
+	in vier Tagen wird der weiche Wurm vom Markt zurückkehren. Er weiß alles, was ihr braucht, um N. zu besetzen. Denkt daran, wozu wir gemeinsam fähig sind, wenn wir endlich das alte Orkblut bergen!
+	
+	\begin{flushright}
+		-- D.
+	\end{flushright}
+}
+
+\vfill
+
+\subsection*{Handout 2: Die Höhlenkarte}
+\label{kuh_ho2}
+
+\bigskip
+\begin{center}
+	\bild[\textwidth]{Karte3.png}
+\end{center}
+
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Arion Nebelsucherin,arion}]{klamm_und_heimlich/charaktere/arion_nebelsucherin.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Donata Donnerschlag,donata}]{klamm_und_heimlich/charaktere/donata_donnerschlag.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Elidir Fenius Galahan,elidir}]{klamm_und_heimlich/charaktere/elidir_fenius_galahan.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Karox Sohn des Kalgrix,karox}]{klamm_und_heimlich/charaktere/karox_sohn_des_kalgrix.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Selindian,selindian}]{klamm_und_heimlich/charaktere/selindian_der_wuerstchenspalter.pdf}
+
+\section{Asche im Wind}
+\absatz{Karte des Svelltlands}
+
+Die von \textbf{telling} gemachte Karte des Svelltlandes findet sich in tellings Blog \href{https://tellingaventurien.home.blog/2023/02/27/karte-svelltland-um-1045-nach-bosparans-fall/}{\textbf{\enquote{Zwischen Tisch und Telling}}}.
+
+Mit freundlicher Genehmigung des Autors:
+
+\begin{center}
+	\includegraphics[width=\textwidth]{svellttal-0211.png}
+\end{center}
+
+\newpage
+
+\kasten{
+	\absatz{Quelle 1: Augenzeugenbericht}
+	\label{aiw_quelle1}
+	\enquote{Der Angriff hat nachts stattgefunden.
+		Es schien plötzlich noch dunkler zu werden und ein Rauchgeruch hing in der Luft, der nicht von unserem kleinen Feuer stammen konnte.
+		Beißender Qualm hat einen nach dem anderen zum Husten gebracht und die Sicht war schlecht. Die Gestalt, die dann aufgetaucht ist, schien geradewegs vom Himmel auf uns herabzufahren und aus Rauch und Qualm zu bestehen. Um sie herum begann das Gras zu schwelen und zu verkohlen. Wir leisteten kurz Widerstand, konnten aber gegen die allgegenwärtige Hitze nicht lange ankommen, zumal uns das Atmen schwer fiel. Inmitten des dichtesten Qualms habe ich aber eine etwa menschengroße Gestalt ausmachen können, die mich an ein Zündholz erinnert hat oder an eine halb erstickte Fackel, denn sie war dünn und verkohlt. Halb geblendet und nach Luft ringend sind alle in die Nacht geflohen, jeder in eine andere Richtung. Als ich an den Fluss kam, konnte ich mich dort im Dickicht am Ufer verbergen und mir den ganzen Ruß abwaschen. Noch am nächsten Morgen brannten mir die Augen.}
+}
+
+\absatz{Quelle 2: Die Weinlegende}
+\label{aiw_quelle2}
+Ihr betretet eine Holzhütte, die aussieht, als wäre sie vor kurzem aus frischen Buchenholz zusammengeschustert worden und die euch als Gasthaus beschrieben wurde. Innendrin entdeckt ihr einen schummrigen Saal mit vielen langen Tafeln und ihr seid erleichtert, dass der Duft des frischen Holzes noch nicht von diversen anderen Gerüchen jahrelangen Tavernenbetriebes überlagert wird.
+
+Nur die bunt zusammengewürfelte Gruppe von Berufs- und Hobbytrinkern stört das würzige Aroma des hellen Schankraumes.
+Diese hat sich in der Nähe des Tresens um einen älteren Gesellen mit roter Nase versammelt, dem gerade ein neues Glas Schnaps eingeschenkt wird.
+
+\enquote{Wo war ich?}, stammelt der Alte.\\
+\enquote{Bei Jokmanns Wein, Opa}, erklärt einer der Männer ungeduldig.\\
+\enquote{Ach ja. Also das war damals so: Wie ich schon sagte, hatte der alte Jokmann das Jagen schon halb aufgegeben, weil das Revier, das er damals vom alten Firnwulf geerbt hatte, von dem alten Gierschlund so richtig ratzekahl leergejagt worden ist. Da hattest du vielleicht höchstens eine einzige Wildschweinrotte mit 10 Tieren, die Hälfte davon waren Frischlinge, alle noch an Mutterns Zitze und die andere Hälfte war so alt und zäh, die hätte nicht mal unser guter Alrik hier weichgeschmort bekommen.\\	
+	Der Rest vom Wild hatte sich komplett drüben zu den Hexen verdrückt, weil die nix dagegen hatten, dass die die ganzen Jungtriebe von den Tannen abknabbern. Aber wenn du die das machen lässt, dann hast du ruckzuck den ganzen Wald kaputt und dann ist gar nix mehr mit jagen, das sag ich dir!
+	
+	Na ja, wie ich sagte, Jokmann war ziemlich am Ende. Und dann sagte er sich:
+	\enquote{Komm, einen letzten Ausflug machst du noch und wenn Firun dann nicht mit dir ist, dann gehst du zurück in die Stadt und suchst dir eine Anstellung bei einem Bogenbauer oder beim Jagdvogt oder so.}
+	Also schnappt er sich seinen treuen Hund Pix und marschiert in die Wildnis. Wir dachten damals ja, den sehen wir nie wieder, ich mein, wir waren damals ja auch nur kleine Stöpsel und der hatte so einen grimmigen Gesichtsausdruck. Und dann kam eine Woche später auch noch ein Sturm auf und keine Spur von Jokmann! Aber als wir schon alle Hoffnung aufgeben wollten, stapft der plötzlich in einer Vollmondnacht in den alten Gasthof und ihr glaubt nicht, wie der aussah! Nix mit dem schmucken Ledermantel, den er anhatte, als er losging, nein! Einen Wildschweinpelz trug er, mit so farbigen Verzierungen drauf und der roch! Der halbe Schankraum hat ihn angestarrt, als wäre er aus Borons Hallen selbst entwischt, gesegnet sei der Rabe.}
+
+Ihr merkt wie die Spannung unter den Zuhörern steigt. Lange kann es nicht mehr dauern, bis die Geschichte ihrem Höhepunkt zustrebt.\\
+\enquote{Na ja, dann waren natürlich alle erst mal heilfroh, dass Jokmann noch da war, vor allem, als man gemerkt hat, dass da immer noch der alte Halunke unter dem Pelz steckt. Den Hund hat er auch wieder mitgebracht und der sah auch aus, als hätte den jemand angemalt. Komisch wurde die Sache aber erst in den Wochen danach. Der ist nämlich dann nicht in die Stadt gegangen für eine Anstellung, nein, der ist im Jagdrevier vom alten Firnwulf geblieben. Der hat sogar die anderen zu einer Drückjagd eingeladen, weil er da den prächtigsten Hirsch gesehen haben wollte, den Tsa jemals auf Dere geschickt haben soll. Die einzige Bedingung war, dass sie alle vorher mit ihm diesen Wein trinken mussten, sonst würde die Jagd schiefgehen.}
+
+Ihr könnt schwören, Opas Zuhörer halten den Atem an. Einer hüstelt kurz, worauf ihn alle anzischen.
+\enquote{Das war ein seltsames Gesöff. Schmeckte fast wie Heidelbeerwein, aber irgendwie fad und erdig. Ich musste es einmal trinken, als sie mich bei einer Jagd als Treiber mitgenommen haben. Ist sofort in die Birne gestiegen und am Ende hab ich mein Mittagessen wieder ausgekotzt. Und die Flasche in der das war, ich will nicht wissen, wo die schon alles gewesen ist. Das war so eine raue Tonkaraffe mit ganz seltsamen Bildchen drauf, so Schweine und kleine Männchen mit Speeren.
+	
+	Na ja, Jokmann hat halt alle dazu gedrängt, das Zeug zu trinken und los. Und tatsächlich sind die nach sieben Stunden mit einer fetten Hirschkuh als Beute zurückgekommen und die Leute haben noch Tage danach davon geschwärmt, dass der Hirsch, der die Kühe begleitet habe, der größte gewesen sei, den sie je gesehen hätten. Der bekam mit jedem Mal erzählen mehr Enden an seinem Geweih, ich sag's euch! 
+	
+	Ja, und seitdem hatte der alte Jokmann nie wieder Pech beim Jagen, so lange er diesen Wein hatte. Und jedes mal, wenn wir dachten, die Flasche muss doch jetzt mal leer sein, ist der wieder für eine Woche im Wald verschwunden und dann war die wieder voll. Und bis zu seinem Todestag hat er dicht gehalten, wo er diesen Wein her hatte! Obwohl sich alle die Mäuler darüber zerrissen haben, mit Feenhügeln und Dämonenpakten und sonst noch was. Nie hat der was durchschlüpfen lassen! So, das ist jetzt die ganze Geschichte, jetzt gib mir mal was zu trinken, meine Kehle ist ja schon ganz trocken!}
+
+Nachdem das Glas eilig aufgefüllt wurde, breitete sich Gemurmel in der Schankstube aus.
+\enquote{Ob diese wandernden Fässer im Wald mit Jokmanns legendärem Wein zu tun haben?}\\
+\enquote{Irgendetwas muss es damit auf sich haben, warum sonst sollte die Torfkompagnie eine Belohnung auf die Fässer ausgerufen haben?}
+
+
+
+\absatz{Eigenheiten der Archetypen}
+
+\spaltenanfang
+
+\kreatur{Alruna \enquote{Eisen-Ala}}{}{humanoid}{
+	\kreaturinfo{Düstere Vergangenheit}{Einen Teil ihrer Kampfausbildung verdankt sie ihrer Jugend bei den Schwarzamazonen. Zwar hat sie diesen Zeiten längst den Rücken gekehrt, doch beherrscht sie noch einige schmutzige Tricks und Techniken, die nicht als sonderlich rondragefällig gelten können. In vielen Regionen muss sie ihre Vergangenheit geheim halten.}
+	\trennlinie
+	\kreaturinfo{Von Rang und Namen}{Als Kriegerin wird sie hochgeschätzt und sie hat gelernt, sich entsprechend zu verhalten. Doch ihr Kriegerbrief ist in Wahrheit eine Fälschung.}
+}
+\kreatur{Falkja}{}{humanoid}{
+	\kreaturinfo{Im Dienste der Schwänin}{Sie hat ihr Leben Ifirn geweiht und befolgt ihre Gebote.}
+	\trennlinie
+	\kreaturinfo{Meine Heimat - die Weite}{Sie hat den Großteil ihres Lebens in den Weiten des Nordens verbracht. Große Städte sind ihr schnell zu eng und mit Kälte kann sie besser umgehen als mit Hitze.}
+	\trennlinie
+	\kreaturinfo{Brückenbauen}{Sie strebt danach, Brücken zwischen den Elfen und den Zwölfgötter-Anhängern zu schlagen, die oft getrennte Gemeinschaften sind.}
+}
+\kreatur{Melcher}{}{humanoid}{
+	\kreaturinfo{Kein Ekel, aber ekelig}{Er hat keine Scheu, sich alles anzusehen oder etwas anzufassen -- kommt gut mit Schmutz klar,  das merkt man ihm auch oft später noch an.}
+	\trennlinie
+	\kreaturinfo{Tiere sind die besseren Menschen}{Er kommt einfach besser mit Tieren aus.}
+	\trennlinie
+	\kreaturinfo{Netter Kauz}{Man traut ihm zu, über manche speziellen Themen Bescheid zu wissen -- aber sicher nicht über alles. Ein sympathischer Typ, aber ein bisschen verrückt.}
+}
+
+\kreatur{Roana}{}{humanoid}{
+	\kreaturinfo{Nebulöser Charakter}{Sie wirkt mysteriös und manchmal unauffällig, aber auch nicht immer sonderlich vertrauenswürdig -- besonders auf abergläubische Leute.}
+	\trennlinie
+	\kreaturinfo{Vergisst nie ein Gesicht}{Sie erkennt Leute immer wieder, doch ist dabei auch nachtragend und rachsüchtig.}
+	\trennlinie
+	\kreaturinfo{Wirren des Geistes}{Sie ist manchmal etwas verwirrt \dots in diesem Zustand kann sie leichter mit Geistern in Kontakt treten. Das mag zwar helfen, um diese zu bannen, führt aber manchmal im Gegenteil dazu, dass sie umso leichter einer Besessenheit erliegt.}
+}
+
+\kreatur{Wiesel-Rupo}{}{humanoid}{
+	\kreaturinfo{Kennt keine Furcht\dots und keine Vernunft}{Er nimmt nichts wirklich ernst und alles auf die leichte Schulter und schätzt deshalb Risiken kaum ab. Die Leute
+		bewundern seinen Mut, aber viele seiner Aktionen sind auch
+		einfach leichtsinnig.}
+	\trennlinie
+	\kreaturinfo{Da gibt es doch ein Mittelchen}{Der Glaube des Charakters an die Wunder der Medizin ist stark ausgeprägt. Er hat selbst von eigentlich schlechten oder gar völlig unwirksamen Mitteln einen Placebo-Effekt, doch wird dementsprechend beim Angebot jedes Quacksalbers schwach.}
+	\trennlinie
+	\kreaturinfo{Die Wahrheit wäre auch zu langweilig}{Er neigt zu Übertreibungen und schindet damit bei einigen ordentlich Eindruck, bei anderen eher das Gegenteil.}
+	\trennlinie
+	\kreaturinfo{Die kriegen mich eh nie}{Er muss geradezu zwanghaft am Tatort sein Markenzeichen zurücklassen -- ein kleines Papier mit Schlangensymbol in die leere Hosentasche stecken oder in der leeren Schatztruhe platzieren. Das gibt ihm einfach diesen besonderen 		Adrenalinschub.}
+}
+
+\spaltenende
+
+
+\neueseite
+\ohnehintergrund
+\includepdf[pages=1-2,addtotoc={1,subsection,1,Charakterbogen Alruna \enquote{Eisen-Ala},eisenala}]{asche_im_wind/charaktere/eisen_ala.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Falkja Narejko,falkja}]{asche_im_wind/charaktere/falkja_narejko.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Melcher Ziegelbart,melcher}]{asche_im_wind/charaktere/melcher.pdf}
+\includepdf[pages=-, addtotoc={1,subsection,1,Charakterbogen Roana Wildfang,roana}]{asche_im_wind/charaktere/roana_wildfang.pdf}
+\includepdf[pages=1-2,addtotoc={1,subsection,1,Charakterbogen Wiesel-Rupo,rupo}]{asche_im_wind/charaktere/wiesel_rupo.pdf}
+\neueseite
+\handout
+\section{In den Hallen des Bergkönigs}
+\subsection{Das Relief hinter dem Angrosch-Altar}
+%Lösung: D G M
+\label{karten}
+\mbox{}
+
+\begin{center}
+	\bigskip
+	\vfill
+	\includegraphics[width=0.5\textwidth]{ngrsch.png}
+\end{center}
+
+\vfill
+
+\begin{multicols}{3}
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \amboss \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{S.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\amboss \leer \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\vfill
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\amboss \leer \amboss \leer
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{B.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\leer \amboss \leer \amboss
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\amboss \leer \leer \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{G.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\leer \amboss \amboss \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\amboss  \amboss \leer \leer
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{N.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\leer  \leer \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \leer \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{F.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\amboss  \amboss \amboss \leer 
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \amboss \amboss \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{J.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\amboss \leer \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \leer  \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{H.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\amboss \amboss \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \amboss \amboss \leer
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{P.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\amboss \leer \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \leer \leer
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{D.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\amboss \leer \amboss \amboss
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \amboss \leer \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{W.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\leer \amboss \amboss \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{R.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \leer \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+	\karte{
+		\begin{multicols}{3}\mbox{ }\linebreak \begin{tabularx}{1.5cm}{|X|}
+				\amboss \amboss \leer \amboss
+				\hline	\end{tabularx}	\neuespalte
+			\begin{center} \mbox{ } \linebreak[4]
+				\includegraphics[width=\columnwidth]{M.png}
+			\end{center} \neuespalte \mbox{ } \begin{tabularx}{1.5cm}{|X|}
+				\leer \leer \amboss \leer
+				\hline \end{tabularx} \end{multicols}
+	}\bigskip
+	
+\end{multicols}
+\vfill
+\footnotesize
+\textbf{Lizenzhinweise:}
+\label{lizenz}
+\bigskip
+
+Rogolan-Font von Thorsten Most auf Basis der Spielhilfe \enquote{Angroschs Kinder}.
+
+Ambosssymbole: Anvil Impact von Lorc, \href{https://game-icons.net/1x1/lorc/anvil-impact.html}{game-icons.net} unter der \href{https://creativecommons.org/licenses/by/3.0/}{CC BY 3.0-Lizenz}.
+
+Hebel-Symbol: Lever icon von Lorc, \href{https://game-icons.net/1x1/lorc/lever.html}{game-icons.net}{CC BY 3.0-Lizenz}.
+\normalsize
+\newpage
+
+\subsection{Das Rätseltor}
+\label{raetsel}
+\fbox{\includegraphics[width=0.95\textwidth]{tor-v.png}}
+\newpage
+\fbox{\includegraphics[width=0.95\textwidth]{tor-r.png}}
+\newpage
+
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Dascha (Tierkriegerin),dascha}]{bergkoenig/pdf/dascha.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Jasinthe (Gelehrte),jasinthe}]{bergkoenig/pdf/jasinthe.pdf}
+%\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Zwergische Angrosch-Geweihte, Hüterin der Wacht),graboxa}]{bergkoenig/pdf/graboxa.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Geweihte),graboxa}]{bergkoenig/pdf/Graboxa.pdf}
+\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Odir (Pferdedieb),odir}]{bergkoenig/pdf/odir_sensendengler.pdf}
 
 \end{document}
