@@ -1,5 +1,7 @@
 # Chroniken 2
 
+## 04.02.2025
+
 LaTeX Release: https://github.com/Ilaris-Tools/IlarisTex/releases/tag/v0.1.2-rc2
 
 Außerdem in die ilaris.cls hinzufügen:
@@ -27,3 +29,5 @@ Außerdem in die ilaris.cls hinzufügen:
 ```
 
 und die `rogolan.otf` in `texmf/fonts/opentype/ilaris` ablegen.
+
+Außerdem müssen noch Kreaturen in `texmf/tex/latex/ilaris/kreaturen.tex` hinzugefügt werden TODO
