@@ -29,5 +29,3 @@ Außerdem in die ilaris.cls hinzufügen:
 ```
 
 und die `rogolan.otf` in `texmf/fonts/opentype/ilaris` ablegen.
-
-Außerdem müssen noch Kreaturen in `texmf/tex/latex/ilaris/kreaturen.tex` hinzugefügt werden TODO
