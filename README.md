@@ -4,7 +4,9 @@
 
 LaTeX Release: https://github.com/Ilaris-Tools/IlarisTex/releases/tag/v0.1.2-rc2
 
-Außerdem in die ilaris.cls hinzufügen:
+### ilaris.cls
+
+#### biglittlecap
 
 ```
 \ExplSyntaxOn
@@ -28,4 +30,13 @@ Außerdem in die ilaris.cls hinzufügen:
 \ExplSyntaxOff
 ```
 
+#### Probenkasten Transparenz
+
+Set opacity in probenkasten
+
+`\node[anchor=center,opacity=0.7] at (frame.center) {\includegraphics[width=\ProbeBgscale mm]{gfx/proben/\ProbeBild_bg.png}};`
+
+### Fonts
+
 und die `rogolan.otf` in `texmf/fonts/opentype/ilaris` ablegen.
+
