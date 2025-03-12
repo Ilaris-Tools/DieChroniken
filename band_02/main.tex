@@ -19,6 +19,7 @@
 	width=\linewidth,
 	#1
 }
+\definecolor{hellbeige}{HTML}{efddc4}
 
 \newtcolorbox{whitebox}[1][]{
 	enhanced jigsaw,
@@ -39,7 +40,7 @@
 	bottom=2mm,
 	colframe=beige,
 	width=\linewidth,
-	colback=white,
+	colback=hellbeige,
 	#1
 }
 \newcommand{\vorlesen}[1]{\begin{whitebox}#1\end{whitebox}}
@@ -257,26 +258,37 @@ Das Ilaris-Regelbuch wird im folgenden mit \emph{Ilaris} und der entsprechende S
 \info{Diese Kästen nutzen wir für Anweisungen an Sie als Spielleitung.}
 
 \probe{Klugheit}{Probenkästen}{weisen darauf hin, dass ein Würfelwurf die Szene entscheidend verändern kann.}
+\probe{Heimlichkeit}{Pirschen (6+X)}{Gerne wird durch ein +X angedeutet, dass die Probe vergleichend ist.}
+
+\vfill
+
+\includegraphics[width=\linewidth]{offene_lizenz/rome_20}
+
+\columnbreak
+
+Größere Kästen ermöglichen komplexere Proben z.B. solche mit Auswirkung je nach Anzahl Hoher Qualität. Ist \textit{Zusammenarbeit} (Ilaris:8) erlaubt \texticon{probe_zusammenarbeit_ja} oder nicht \texticon{probe_zusammenarbeit_nein}? Handelt es sich um eine \textit{Gruppenprobe} (Ilaris:8), wo der beste Charakter \texticon{probe_gruppenprobe_gut}, oder wo der schlechteste Charakter würfelt \texticon{probe_gruppenprobe_schlecht}, oder ist es gar keine Gruppenprobe \texticon{probe_gruppenprobe_nein}? Wird mit 3W20 \texticon{wuerfel_rot_3} oder 1W20 \texticon{wuerfel_rot_1} gewürfelt - dabei wird auch direkt die Schwierigkeit angegeben, wenn es sich um eine offene Probe handelt? Proben mit einem Detailgrad über eins \texticon{probe_detailgrad_1} (Ilaris:9) sind \textit{ausgedehnte Proben} mit Detailgrad zwei \texticon{probe_detailgrad_2}, drei \texticon{probe_detailgrad_3} oder sogar vier \texticon{probe_detailgrad_4}. Zuletzt wird noch angegeben, ob eine \textit{offene Probe} \texticon{probe_vergleichend_nein} oder eine \textit{vergleichende Probe} \texticon{probe_vergleichend_ja} gewürfelt wird (Ilaris:9). Ein Beispiel:
 
 \probenkasten[
 bild=beeinflussung,
-erfolg={Dann kann man hier lesen, was im Erfolgsfall \dots},
-misserfolg={\dots und hier, was bei einem Misserfolg passiert.},
-zusammenarbeit=nein,
-pw=X,
+erfolg={Der Troll glaubt dir und lässt dich über die Brücke.},
+misserfolg={Der Troll besteht auf seine Portion Honig.},
+zusammenarbeit=ja,
+anzahl=3,
+pw=18,
 farbe=rot
-]{Größere Kästen}{%
-	erlauben beispielsweise, mehrere Schwierigkeiten anzugeben. In so einem Fall wählt das würfelnde Gruppenmitglied die gewünschte Schwierigkeit jeweils selbst.\\
-	Die Symbole geben an, ob mit einem oder drei Würfeln gewürfelt wird \emph{(Ilaris:7)} \emph{Zusammenarbeit} möglich ist, ob es sich um eine \emph{Gruppenprobe} handelt, welche \emph{Schwierigkeit} \emph{(Ilaris:8)} zu überwürfeln ist, welcher \emph{Detailgrad} anliegt und ob die Probe \emph{vergleichend} \emph{(Ilaris:9)} oder als offener Wurf gegen eine feste Schwierigkeit abgelegt wird.
+]{Überreden}{%
+Kannst du die Brückentrolle überreden? Wenn du dich traust 2 HQ anzusagen (Probe +8) und dir die Probe dennoch gelingt, kannst du den Troll sogar überreden, dir zu helfen.
 }
 
-\bigskip
+\includegraphics[width=\linewidth]{offene_lizenz/owl_nb}
 
-Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen und Anregungen.
+Wir wünschen euch viel Spaß beim Spielen und freuen uns über jede Rückmeldung und Anregung!
 
 \bigskip
 
 \textsl{Xaver Stiensmeier}
+
+
 
 \spaltenende
 
@@ -301,7 +313,7 @@ Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen u
 	\credit{Lektorat}{
 		Elisabeth Schmitt}
 	
-	\credit{Danksagung}{an alle, die an einer der vier Testrunden teilgenommen haben!}
+	\credit{Danksagung}{Danke an alle, die an einer der vier Testrunden teilgenommen haben!}
 %	
 %	\credit{Titelbild \& Karte}{Matthias Thanos}
 

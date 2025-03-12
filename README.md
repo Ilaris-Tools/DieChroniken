@@ -30,6 +30,10 @@ LaTeX Release: https://github.com/Ilaris-Tools/IlarisTex/releases/tag/v0.1.2-rc2
 \ExplSyntaxOff
 ```
 
+#### probenkasten 
+
+Added a `\vspace{0.25}` at the beginning and end.
+
 #### Probenkasten Transparenz
 
 Set opacity in probenkasten
@@ -40,3 +44,7 @@ Set opacity in probenkasten
 
 und die `rogolan.otf` in `texmf/fonts/opentype/ilaris` ablegen.
 
+### Bilder
+#### Probenkastenbilderbereinigung
+
+Da waren noch Artefakte, die ich entfernt habe.
