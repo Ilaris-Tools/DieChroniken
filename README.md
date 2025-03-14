@@ -48,3 +48,16 @@ und die `rogolan.otf` in `texmf/fonts/opentype/ilaris` ablegen.
 #### Probenkastenbilderbereinigung
 
 Da waren noch Artefakte, die ich entfernt habe.
+
+## Smaller PDF sizes
+
+`cpdf -squeeze input.pdf -o output.pdf`
+
+`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/ebook -o output.pdf input.pdf`
+
+| Option      | Color & Grayscale DPI | Monochrome DPI | Purpose |
+|------------|----------------------|---------------|---------|
+| `/screen`  | **72 DPI**            | 72 DPI        | Smallest file size, optimized for screen viewing. |
+| `/ebook`   | **150 DPI**           | 300 DPI       | Good balance of size and quality for eBooks. |
+| `/printer` | **300 DPI**           | 600 DPI       | High quality, suitable for printing. |
+| `/prepress`| **300-400 DPI**       | 1200 DPI      | Very high quality, retains metadata and color profiles. |
