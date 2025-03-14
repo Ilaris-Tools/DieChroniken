@@ -19,6 +19,7 @@
 	width=\linewidth,
 	#1
 }
+\definecolor{hellbeige}{HTML}{efddc4}
 
 \newtcolorbox{whitebox}[1][]{
 	enhanced jigsaw,
@@ -39,7 +40,7 @@
 	bottom=2mm,
 	colframe=beige,
 	width=\linewidth,
-	colback=white,
+	colback=hellbeige,
 	#1
 }
 \newcommand{\vorlesen}[1]{\begin{whitebox}#1\end{whitebox}}
@@ -101,107 +102,20 @@
 	\end{centering}
 }
 \neueseite
-%TODO
-
-%Neue Slogans Sephrasto
-% Überschriften außerhalb von multicols zentriert?
-%Spielhilfen: Beschreibung der Brauerei (ggf. mit Videos)
-%Neue Illustrationen einpflegen
-%Nachbesserungen der verbleibenden Autor*innen
-%TODO
-
-
-\subsection*{Version 0.8 vom \today}
-Cover ausgetauscht
-
-Titelgrafiken zwei Abenteuer
-
-Goblin-Illustration ins richtige Abenteuer versetzt
-
-Illustration von Alnus (Platzhalter)
-
-\subsection*{Versionsgeschichte}
-
-
-\subsubsection*{Version 0.7}
-Titelseiten-Design vorbereitet und zwei Grafiken Bernard eingefügt
-
-Vorwort eingefügt
-
-Nachbesserungen \enquote{Asche}
-
-Korrektorat Charakterbögen \enquote{Bergkönig} und Illustration von Zillie Zeh
-
-Anhänge zum Ausdrucken ans Ende verschoben
-
-
-\subsubsection*{0.6}
-Inhaltsverzeichnis gekürzt
-
-Encounter-Spielhilfe fertig layoutet und mit dem Autor abgestimmt
-
-\enquote{Schwarze Hand} fertig layoutet
-
-Abenteuer aus dem Bestand bebildert
-
-Kleinere Korrekturen
-
-%\subsubsection*{0.5}
-%Encounter-Spielhilfe eingefügt und erste Hälfte layoutet
-%
-%Reihenfolge der Abenteuer verändert
-%
-%Todo-Liste für den Satz angelegt
-%
-%Finetuning \enquote{Schwarze Hand}
-%
-%Übersicht über die Spielhilfen begonnen
-%
-%Überarbeitung \enquote{Hallen des Bergkönigs} nach Jury-Feedback
-%
-%Autor*innennamen hinzugefügt
-%
-%IHVZ-Einträge für Charaktere, Leere Seiten aus den Charakterbögen gekürzt 
-%
-%Höhlenkarte (\enquote{Klamm und heimlich}) eingebunden
-%
-%Kleinere Korrekturen 
-%
-%\subsubsection*{0.4}
-%Charakterbögen eingebunden
-%
-%IHVZ angepasst  
-%
-%Groblayout viertes Abenteuer 
-%
-%Kreaturenkästen für Klamm und heimlich
-
-%\subsubsection*{0.3}
-%Vereinheitlichung Zitation und andere Markups in den drei Abenteuern
-%
-%Plätze für Grafiken (vorbehaltlich Textänderungen nach Feedback)
-%
-%Hierarchie der Überschriften vereinheitlicht
-
-%\subsubsection{0.2}
-%Groblayout drei Abenteuer
-%
-%Einbau Probenkästen
-%
-%Interne Referenzen
-
-
-%TODO: Formatierungskonventionen
-%Zitatangaben kursiv und mit Doppelpunkt: \emph{Reich des roten Mondes:69}, das Regelbuch als \emph{Ilaris:9}.
-%\textbf{Aventurische Begriffe}, \emph{Regelwerk-Begriffe}, \textsc{Name von Zauber oder Liturgie}.
-
 
 \platz
-
-\credit{Organisation und Redaktion}{
-	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}
-}
-
+{\Large
+\vspace*{0.5cm}
+\begin{center}
+\textbf{Version 0.9 vom \today}
+\end{center}
+\vspace*{0.25cm}
+\begin{center}
+{\Large
+\textit{Dein Wille ist Leben und Tod und der Grat dazwischen.}\\
+--- aus den Chroniken von Ilaris}
+\end{center}
+\vfill
 \credit{Abenteuer-Autor*innen}{
 	Matthias Ott\\
 	Tilmann Kircher\\
@@ -210,6 +124,7 @@ Kleinere Korrekturen
 	Matthias Thanos
 	
 }
+
 \credit{Spielhilfen-Autor*innen}{	
 	Arne Strehlow\\
 	Alrik Normalpaktierer
@@ -218,11 +133,13 @@ Kleinere Korrekturen
 }
 \credit{Illustrationen}{
 	\href{https://www.artstation.com/bernhard\_eisner}{Bernhard Eisner}\\
-	Matthias Thanos\\
 	Alnus (Anton Dobsak)\\
+	Matthias Thanos\\
 	% Norman Obst\\
 	% René Dudziak\\
-	\href{https://www.zillie-zeh.de/}{Zillie Zeh}
+	\href{https://www.zillie-zeh.de/}{Zillie Zeh}\\
+	\href{https://www.nga.gov/}{National Gallary of Art}\\
+	\href{https://www.flickr.com/photos/britishlibrary/albums/with/72157640537276514}{British Library}\\
 }	
 \credit{\LaTeX-Klasse}{
 	\href{https://github.com/ilaris-tools/IlarisTex}{Lukas Ruhe}
@@ -231,14 +148,19 @@ Kleinere Korrekturen
 \credit{Satz}{
 	Matthias Ott\\
 	Lukas Ruhe\\
-	\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}\\
+	\href{https://github.com/XaverStiensmeier}{Xaver Stiensmeier}\\
 	
 }
 \credit{Korrektorat}{
-	% Matthias Ott\\
-	% Tilmann Kircher
+	Matthias Ott\\
+	Matthias Thanos\\
+	Tilmann Kircher\\
+	Xaver Stiensmeier
 }
-%\credit{Glossar}{\href{https://github.com/XaverStiensmeier/IlarisGlossaryEntries}{Xaver Stiensmeier}}
+
+\credit{Organisation und Redaktion}{
+	\href{https://github.com/XaverStiensmeier}{Xaver Stiensmeier}
+}}
 \lizenz
 \inhaltsverzeichnis
 \neueseite
@@ -257,33 +179,47 @@ Das Ilaris-Regelbuch wird im folgenden mit \emph{Ilaris} und der entsprechende S
 \info{Diese Kästen nutzen wir für Anweisungen an Sie als Spielleitung.}
 
 \probe{Klugheit}{Probenkästen}{weisen darauf hin, dass ein Würfelwurf die Szene entscheidend verändern kann.}
+\probe{Heimlichkeit}{Pirschen (6+X)}{Gerne wird durch ein +X angedeutet, dass die Probe vergleichend ist.}
+
+\vfill
+
+\includegraphics[width=\linewidth]{offene_lizenz/rome_20_3}
+
+\columnbreak
+
+Größere Kästen ermöglichen komplexere Proben z.B. solche mit Auswirkung je nach Anzahl Hoher Qualität. Im Sinne der Übersichtlichkeit werden verschiedene Symbole benutzt, um die Probe zu beschreiben: Ist \textit{Zusammenarbeit} (\ilaris{8}) erlaubt \texticon{probe_zusammenarbeit_ja} oder nicht \texticon{probe_zusammenarbeit_nein}? Handelt es sich um eine \textit{Gruppenprobe} (\ilaris{8}), wo der beste Charakter \texticon{probe_gruppenprobe_gut}, oder wo der schlechteste Charakter würfelt \texticon{probe_gruppenprobe_schlecht}, oder ist es gar keine Gruppenprobe \texticon{probe_gruppenprobe_nein}? Wird mit 3W20 \texticon{wuerfel_rot_3} oder 1W20 \texticon{wuerfel_rot_1} gewürfelt - dabei wird auch direkt die Schwierigkeit angegeben, wenn es sich um eine offene Probe handelt? Proben mit einem Detailgrad über eins \texticon{probe_detailgrad_1} (\ilaris{9}) sind \textit{ausgedehnte Proben} mit Detailgrad zwei \texticon{probe_detailgrad_2}, drei \texticon{probe_detailgrad_3} oder sogar vier \texticon{probe_detailgrad_4}. Zuletzt wird noch angegeben, ob eine \textit{offene Probe} \texticon{probe_vergleichend_nein} oder eine \textit{vergleichende Probe} \texticon{probe_vergleichend_ja} gewürfelt wird (\ilaris{9}). Ein Beispiel:
 
 \probenkasten[
 bild=beeinflussung,
-erfolg={Dann kann man hier lesen, was im Erfolgsfall \dots},
-misserfolg={\dots und hier, was bei einem Misserfolg passiert.},
-zusammenarbeit=nein,
-pw=X,
+erfolg={Der Troll glaubt dir und lässt dich über die Brücke.},
+misserfolg={Der Troll besteht auf seine Portion Honig.},
+zusammenarbeit=ja,
+anzahl=3,
+pw=18,
 farbe=rot
-]{Größere Kästen}{%
-	erlauben beispielsweise, mehrere Schwierigkeiten anzugeben. In so einem Fall wählt das würfelnde Gruppenmitglied die gewünschte Schwierigkeit jeweils selbst.\\
-	Die Symbole geben an, ob mit einem oder drei Würfeln gewürfelt wird \emph{(Ilaris:7)} \emph{Zusammenarbeit} möglich ist, ob es sich um eine \emph{Gruppenprobe} handelt, welche \emph{Schwierigkeit} \emph{(Ilaris:8)} zu überwürfeln ist, welcher \emph{Detailgrad} anliegt und ob die Probe \emph{vergleichend} \emph{(Ilaris:9)} oder als offener Wurf gegen eine feste Schwierigkeit abgelegt wird.
+]{Überreden}{%
+Kannst du die Brückentrolle überreden? Wenn du dich traust 2 HQ anzusagen (Probe -8 erschwert) und dir die Probe dennoch gelingt, kannst du den Troll sogar überreden, dir zu helfen.
 }
+Nutzt du diese Publikation digital, kannst du auf die Titel der Abenteuer klicken, um alle Kreaturen des Abenteuers im Browser anzuzeigen. Außerdem kannst du auf alle Seitenzahlen aus dem Ilaris Regelwerk klicken, um ein PDF der Seite im Browser zu öffnen. Zudem sind Verweise auf den Anhang auch verlinkt, sodass du schneller im Abenteuer selbst springen kannst. Wir empfehlen, Handouts vorab auszudrucken.
+\vfill
+\begin{center}
+\includegraphics[width=0.8\linewidth]{offene_lizenz/owl_nb}
+\end{center}
 
-\bigskip
-
-Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen und Anregungen.
+Wir wünschen euch viel Spaß beim Spielen und freuen uns über jede Rückmeldung und Anregung!
 
 \bigskip
 
 \textsl{Xaver Stiensmeier}
+
+
 
 \spaltenende
 
 
 
 
-\kapitel{Klamm und heimlich}
+\kapitel{\href{https://ilaris-online.de/app/abenteuer/a97d90fd-4f35-4072-a08f-8cd70b604c4b}{Klamm und heimlich}}
 \thispagestyle{empty}
 
 \begin{center}
@@ -301,7 +237,7 @@ Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen u
 	\credit{Lektorat}{
 		Elisabeth Schmitt}
 	
-	\credit{Danksagung}{an alle, die an einer der vier Testrunden teilgenommen haben!}
+	\credit{Danksagung}{Danke an alle, die an einer der vier Testrunden teilgenommen haben!}
 %	
 %	\credit{Titelbild \& Karte}{Matthias Thanos}
 
@@ -309,7 +245,7 @@ Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen u
 \input{klamm_und_heimlich/klamm-und-heimlich.tex}
 
 
-\chapter*{Die schwarze\linebreak Hand im Wengen\-holmer Land}
+\chapter*{\href{}{Die schwarze\linebreak Hand im Wengen\-holmer Land}} % TODO
 \addcontentsline{toc}{chapter}{Die\,schwarze\,Hand\,\allowbreak im\,\allowbreak Wengen\-holmer\allowbreak\,Land}
 \thispagestyle{empty}
 
@@ -341,7 +277,7 @@ Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen u
 
 
 
-\kapitel{Asche im Wind}
+\kapitel{\href{https://ilaris-online.de/app/abenteuer/eaf26b12-f242-42d9-aaba-c4f5c50a2374}{Asche im Wind}}
 
 \thispagestyle{empty}
 
@@ -360,7 +296,7 @@ Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen u
 \input{asche_im_wind/asche-im-wind.tex}
 
 
-\chapter*{In den Hallen\linebreak des Bergkönigs}
+\chapter*{\href{https://ilaris-online.de/app/abenteuer/43ab1538-1193-4d9b-8056-648819bf51a7}{In den Hallen\linebreak des Bergkönigs}}
 \addcontentsline{toc}{chapter}{In den Hallen\allowbreak\ des Bergkönigs}
 
 \thispagestyle{empty}
@@ -370,8 +306,8 @@ Wir wünschen euch viel Spaß beim Spielen und freuen uns über Rückmeldungen u
 \usekomafont{section}Matthias Ott\normalfont\normalcolor\normalsize
 \end{center}
 
-\credit{Illustrationen}{\href{https://www.artstation.com/bernhard\_eisner}Alnus (Anton Dobsak)\\
-	{Bernhard Eisner}\\
+\credit{Illustrationen}{\href{https://www.artstation.com/bernhard\_eisner}{Bernhard Eisner}\\
+    Alnus (Anton Dobsak)\\
 	\href{https://www.zillie-zeh.de/}{Zillie Zeh}\\	
 	game-icons.net
 }
@@ -437,7 +373,7 @@ Die von \textbf{telling} gemachte Karte des Svelltlandes findet sich in tellings
 Mit freundlicher Genehmigung des Autors:
 
 \begin{center}
-	\includegraphics[width=\textwidth]{svellttal-0211.png}
+	\includegraphics[width=\textwidth]{svellttal}
 \end{center}
 
 \newpage
