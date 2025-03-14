@@ -2,8 +2,25 @@
 \usepackage{lipsum}
 \usepackage{multicol}
 \usepackage{fontspec}
+\usepackage{xcolor}
 \newfontfamily{\aniron}{Aniron-Bold.ttf}
-\setkomafont{section}{\Large\strut}
+%\setkomafont{section}{\Large\aniron\strut}
+\setkomafont{section}{\aniron\Large\linespread{1.7}\selectfont}
+\makeatletter
+\renewcommand*{\sectionlinesformat}[4]{%
+  \@hangfrom{\hskip#2#3}{#4\unskip\strut}% Adding \strut at the end also needed.
+}
+\makeatother
+%\makeatletter
+%\renewcommand*{\sectionlinesformat}[4]{%
+%  \smash{\makebox[0pt][l]{\color{yellow}\rule[-\dp\strutbox]{\columnwidth}{\baselineskip}}}% For debugging only
+%  \@hangfrom{\hskip#2#3}{%
+%    #4\unskip
+%    \vphantom{ABCDEFGHIJKLMNOPQRSTUVWÖÄÜabcdefghijklmnopqrstuvwäöü1234567890;!§?}%
+%  }
+%}
+%\makeatother
+
 \begin{document}
 
 \begin{multicols}{2}
@@ -14,7 +31,7 @@
 
 \columnbreak
 
-\section{\overset{H}{H}intergrund}
+\section{Dramatis}
 \lipsum[3]
 \end{multicols}
 
