@@ -4,6 +4,15 @@
 \usepackage{fourier}
 \usepackage{geometry}
 
+% get rid of some repeating errors/warnings
+% \usepackage{silence}
+% \WarningsOff[hyperref] % Suppress warnings from the hyperref package
+% \WarningsOff[font]     % Suppress font warnings
+% \hbadness=10000 % Suppress underfull hbox warnings
+% \vbadness=10000 % Suppress underfull vbox warnings
+% \hfuzz=1pt      % Suppress overfull hbox warnings up to 1pt
+% \vfuzz=1pt      % Suppress overfull vbox warnings up to 1pt
+
 
 %\input{kreaturen.tex}
 
@@ -46,6 +55,10 @@
 	#1
 }
 \newcommand{\vorlesen}[1]{\begin{whitebox}#1\end{whitebox}}
+
+% TODO: hab ich nur ergaenzt weil die commands fehlten, wo sollten die stehen?
+\newcommand{\mprobe}[4]{\probe{#1}{#2}{#3}{#4}}
+\newcommand{\texticon}[1]{\icon{#1.png}}
 
 % NOTE Font liegt jetzt mit im Repository. Funktionert bei mir unter Windows und Linux.
 %\newfontfamily{\rog}{Rogolan.ttf}
@@ -190,7 +203,14 @@ Das Ilaris-Regelbuch wird im folgenden mit \emph{Ilaris} und der entsprechenden 
 
 \columnbreak
 
-Größere Kästen ermöglichen komplexere Proben z.B. solche mit Auswirkung je nach Anzahl Hoher Qualität. Im Sinne der Übersichtlichkeit werden verschiedene Symbole benutzt, um die Probe zu beschreiben: Ist \textit{Zusammenarbeit} (\ilaris{8}) erlaubt \texticon{probe_zusammenarbeit_ja} oder nicht \texticon{probe_zusammenarbeit_nein}? Handelt es sich um eine \textit{Gruppenprobe} (\ilaris{8}), wo der beste Charakter \texticon{probe_gruppenprobe_gut} (Pfeil oben), oder wo der schlechteste Charakter würfelt \texticon{probe_gruppenprobe_schlecht} (Pfeil unten), oder ist es gar keine Gruppenprobe \texticon{probe_gruppenprobe_nein}? Wird mit 3W20 \texticon{wuerfel_rot_3} oder 1W20 \texticon{wuerfel_rot_1} gewürfelt - dabei wird auch direkt die Schwierigkeit angegeben, wenn es sich um eine offene Probe handelt? Proben mit einem Detailgrad über eins \texticon{probe_detailgrad_1} (\ilaris{9}) sind \textit{ausgedehnte Proben} mit Detailgrad zwei \texticon{probe_detailgrad_2}, drei \texticon{probe_detailgrad_3} oder sogar vier \texticon{probe_detailgrad_4}. Zuletzt wird noch angegeben, ob eine \textit{offene Probe} \texticon{probe_vergleichend_nein} oder eine \textit{vergleichende Probe} \texticon{probe_vergleichend_ja} gewürfelt wird (\ilaris{9}). Ein Beispiel:
+Größere Kästen ermöglichen komplexere Proben z.B. solche mit Auswirkung je nach Anzahl Hoher Qualität. Im Sinne der Übersichtlichkeit werden verschiedene Symbole benutzt, um die Probe zu beschreiben:
+Ist \textit{Zusammenarbeit} (\ilaris{8}) erlaubt \texticon{probe_zusammenarbeit_ja} oder nicht \texticon{probe_zusammenarbeit_nein}?
+Handelt es sich um eine \textit{Gruppenprobe} (\ilaris{8}), bei der der beste \texticon{probe_gruppenprobe_gut} (Pfeil oben), oder der schlechteste Charakter \texticon{probe_gruppenprobe_schlecht} (Pfeil unten) würfelt,
+oder ist es gar keine Gruppenprobe \texticon{probe_gruppenprobe_nein}?
+Wird mit 3W20 \texticon{wuerfel_rot_3} oder 1W20 \texticon{wuerfel_rot_1} gewürfelt - dabei wird auch direkt die Schwierigkeit angegeben, wenn es sich um eine offene Probe handelt.
+Proben mit einem Detailgrad über eins \texticon{probe_detailgrad_1} (\ilaris{9}) sind \textit{ausgedehnte Proben} mit Detailgrad zwei \texticon{probe_detailgrad_2}, drei \texticon{probe_detailgrad_3} oder sogar vier \texticon{probe_detailgrad_4}.
+Zuletzt wird noch angegeben, ob eine \textit{offene Probe} \texticon{probe_vergleichend_nein} oder eine \textit{vergleichende Probe} \texticon{probe_vergleichend_ja} gewürfelt wird (\ilaris{9}).
+Ein Beispiel:
 
 \probenkasten[
 bild=beeinflussung,
@@ -652,8 +672,9 @@ Hebel-Symbol: Lever icon von Lorc, \href{https://game-icons.net/1x1/lorc/lever.h
 
 \includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Dascha (Tierkriegerin),dascha}]{bergkoenig/pdf/dascha.pdf}
 \includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Jasinthe (Gelehrte),jasinthe}]{bergkoenig/pdf/jasinthe.pdf}
-%\includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Zwergische Angrosch-Geweihte, Hüterin der Wacht),graboxa}]{bergkoenig/pdf/graboxa.pdf}
 \includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Graboxa (Geweihte),graboxa}]{bergkoenig/pdf/Graboxa.pdf}
 \includepdf[pages=-,addtotoc={1,subsection,1,Charakterbogen Odir (Pferdedieb),odir}]{bergkoenig/pdf/odir_sensendengler.pdf}
 
+% Back cover with proper formatting (in libre office: backcover.odt)
+\includepdf[pages=-]{backcover.pdf}
 \end{document}
