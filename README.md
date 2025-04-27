@@ -62,6 +62,14 @@ Da waren noch Artefakte, die ich entfernt habe.
 | `/printer` | **300 DPI**           | 600 DPI       | High quality, suitable for printing. |
 | `/prepress`| **300-400 DPI**       | 1200 DPI      | Very high quality, retains metadata and color profiles. |
 
+```sh
+mv main.pdf Chroniken_von_Ilaris_Band_2.pdf
+
+for option in /screen /ebook /printer /prepress; do dpi=$(case $option in /screen) echo 72 ;; /ebook) echo 150 ;; /printer) echo 300 ;; /prepress) echo 300-400 ;; esac); output="Chroniken_von_Ilaris_Band_2.pdf_${option//\//_}_${dpi}.pdf"; gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=$option -o "$output" Chroniken_von_Ilaris_Band_2.pdf; done
+
+mkdir -p squeezed && for pdf in *.pdf; do cpdf -squeeze "$pdf" -o "squeezed/$pdf"; done
+```
+
 ## PDF Check
 
 ~~Zusätzlich können wir noch alle Links im PDF überprüfen, ob sie auf valide Websiten zeigen: https://pypi.org/project/pdf-link-checker/ Interne Links werden dabei nicht überprüft.~~
