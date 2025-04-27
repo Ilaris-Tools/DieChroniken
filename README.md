@@ -61,3 +61,9 @@ Da waren noch Artefakte, die ich entfernt habe.
 | `/ebook`   | **150 DPI**           | 300 DPI       | Good balance of size and quality for eBooks. |
 | `/printer` | **300 DPI**           | 600 DPI       | High quality, suitable for printing. |
 | `/prepress`| **300-400 DPI**       | 1200 DPI      | Very high quality, retains metadata and color profiles. |
+
+## PDF Check
+
+~~Zusätzlich können wir noch alle Links im PDF überprüfen, ob sie auf valide Websiten zeigen: https://pypi.org/project/pdf-link-checker/ Interne Links werden dabei nicht überprüft.~~
+
+Habe ich probiert, hat für mich aber nicht funktioniert, da das Paket interne Fehler hat.

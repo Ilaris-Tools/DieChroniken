@@ -308,3 +308,6 @@ TSWLatexianTemp*
 
 # pdf
 *.pdf
+
+# python
+venv/
